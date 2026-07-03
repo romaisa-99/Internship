@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title> Internal JavaScript Continuation </title>
+       
+    </head>
+    <body>
+
+         <h1> Inpage Javascript </h1>
+        <p>In-page JavaScript is JavaScript code written directly inside an HTML document using the script tag. It is commonly placed in the <head> or <body> section of the webpage. This method is useful for small projects, testing code, or adding simple interactive features such as displaying alerts, changing text, or handling button clicks. However, for larger websites, external JavaScript files are preferred because they make the code easier to manage and maintain. </p>
+        
+        <script>
+           document.write("This is the inpage script 1. <br>");
+           document.write("<i><b> This is the inpage script 2.</i><b> <br><br>");
+           //document.write("<i><b> This line has become a comment.</i><b>");
+
+            /*This is
+            a multipe comment that wil
+            be used to comment multiple lines together*/
+
+            //This is String varaiable.
+            var r ="This is 1st Variable"; // Declaring the variable and assigning a value. 
+            document.write(r+ "<br>"); //Printing
+            //When printing a varaible it is imp to always print without ''
+           
+            var a = "This is 2nd Variable "; 
+            var c = " + This is 3rd Variable ";
+            var b = a + c
+            document.write(b +"<br>");
+            document.write(a +  c + " = " + "The combination of 2nd and 3rd." +"<br>")
+            
+             //This is Numerical varaiable.
+            var age = 25.;
+            document.write("My age is " + age + "<br>")
+            var wg = 56.79;
+            //overriding the values of wg
+            wg = 57; // Once the Varaible is decalred there is not need to declare again and again. 
+            document.write("The weight of my bag is " + wg + "<br>")
+            // We can keep overriding the values of the variable however we like.
+
+            var first_name = "I'm Romaisa Shahbaz";
+            document.write(first_name + "<br>");
+
+            //Decalring and assigning seprately.
+            var first, last;
+            first=50;
+            document.write(first + "<br>");
+
+            last="miles";
+            document.write(last + "<br>");
+
+            var combo;
+            document.write( first + " " + last + "<br>")
+
+            //Let Variable
+            // The value can be override but you cannot declare it more than once.
+            let lastName ="Shahbaz";
+            document.write(lastName + "<br>");
+
+            //Const - Constant variable
+            //Once the  value is assigned you cannot change it again.
+            const second="Hello";
+            /* second="Heyy*/
+            document.write(second);
+       </script>
+
+
+        <h1> Javascript Data types </h1>
+       
+       <script>
+        var x = "Scotland";
+        /* var x =1999;
+        x = true;
+        x = 65.93;
+        x = undefined;
+        var x; */
+        x = ["HTML","CSS", "JS","Ruby"]
+        x = {
+            Name:"Romaisa Shahbaz",
+            Country:"Pakistan"
+        }
+        document.write(x);
+        document.write("<br>");
+        document.write(typeof x);
+        </script>
+    
+    <h1> Arthematic Operators </h1>
+    <script>
+    
+    var a = 20;
+    var b = 10;
+    
+    document.write("Value of a = " + a + "<br>");
+    document.write("Value of b = " + b + "<br><br>");
+    
+    document.write("Addition: " + (a + b) + "<br>");
+    document.write("Subtraction: " + (a - b) + "<br>");
+    document.write("Multiplication: " + (a * b) + "<br>");
+    document.write("Division: " + (a / b) + "<br>");
+    document.write("Modulus (Remainder): " + (a % b) + "<br>");
+    document.write("Exponentiation: " + (a ** b) + "<br><br>");
+    
+    a++;
+    document.write("After Increment, a = " + a + "<br>");
+    
+    b--;
+    document.write("After Decrement, b = " + b + "<br>"); 
+
+    var c = (a + b )*2 
+    document.write("The value of c = " + c);
+    </script>
+     
+     <h1> Assignment Operators </h1>
+      <script>
+        var s = 70;
+        var y = 15;
+        
+        document.write("Initial Value of s = " + s + "<br>");
+        document.write("Value of y = " + y + "<br><br>");
+
+        s += y;
+        document.write( "s += y : " + s + "<br>");
+      
+        s -=y;
+        document.write("s -= y : " + s + "<br>");
+
+        s *= y;
+        document.write("s *= y : " + s + "<br>");
+
+        s /= y;
+        document.write("s/= y : " + s + "<br>");
+
+        s %= y;
+        document.write("s %= y : " + s + "<br>");
+      </script>
+      
+
+    </body>
+</html>

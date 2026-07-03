@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Chrome Console </title>
+    </head>
+    <body>
+       <h1 id="main"> <b>Chrome Console </b> </h1>
+               
+        <script>
+ 
+        /*Console shows or identifiyes the javascript errors.*/
+
+        var x =50;
+        console.time("Test Time");
+        console.log(x); // Write/ print the value of x
+        console.log(x + 20); 
+        console.log([1,2,3,4,5,6]); 
+        console.table([1,2,3,4,5]); //the indexs are given the index numbers and also the values. the 1st value is present on 0th index.
+        console.error("Something went wrong!");
+        console.warn("This is your final warning!");
+        console.timeEnd("Test Time");
+       console.clear();
+  </script>
+
+        <h1> Comparision Operators in Console </h1>
+        <script> 
+            var a =10;
+            var b ="10";
+
+            console.log(a == b); // it is still true beacuse it is checking whether the values are same, it is not checkig the data type rn
+            console.log(a === b); //not checking for the same values and also for the same datatype
+            console.log(2 != '2');
+            console.log(2 != 2);
+            console.log(2 !== '2');
+            console.log(2 > '4');
+            console.log(2 < '4');
+            console.log(2 >= '4');
+            console.log(3 <= '4');
+            console.log(null == undefined);
+            console.log(null === undefined);
+
+            console.clear();
+       </script>
+
+       <h1> if statement </h1>
+       <script>
+        var a =150;
+        var b =22;
+
+        if(a>b){
+            document.write("A is Greater than B");
+        }
+       </script>
+
+       <h1> Logical operators </h1>
+       <script> 
+        var age=25;
+
+        /*if (age >= 18 && age <=21){
+            console.log("Yes, your are elegible");
+        }
+*/
+   /*     if (age >= 18 || age <=21){
+            console.log("Yes, your are elegible");
+        }*/
+
+        if (!age >= 18){
+            console.log("Yes, your are elegible");
+        }
+       </script>
+
+
+
+    </body>
+</html>
