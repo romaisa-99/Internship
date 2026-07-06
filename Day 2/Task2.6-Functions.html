@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Ordering System</title>
+</head>
+
+<body>
+
+<h1>Pizza Ordering System</h1>
+
+<script>
+
+var restaurant = "Pizza Palace";
+
+/*A function is a reusable block of code that performs a specific task.
+Instead of writing the same code again and again, you write it once inside a function and call (run) it whenever you need it.*/
+function showRestaurant() //Defining a function
+{
+    document.write("<h2>" + restaurant + "</h2>");
+}
+showRestaurant(); //Calling a funtion
+
+function showOrder(customerName, pizzaName) //Function Name with parameter 1 and parameter 2
+{
+    document.write("Customer Name: " + customerName + "<br>");
+    document.write("Pizza: " + pizzaName + "<br>");
+}
+showOrder("Aleena", "Chicken Supreme"); // Calling a function my arguments 1 and 2. It means placing values of the parameters.
+
+function showOrder(customerName = "Romaisa", pizzaName="Chicken Fajita") //Function by defult value when ou are irectly calling he function without the argumnts.
+{
+    document.write("Customer Name: " + customerName + "<br>");
+    document.write("Pizza: " + pizzaName + "<br>");
+}
+showOrder()
+
+function calculateBill(price, quantity)
+{
+    var a = price * quantity;
+    return a;
+}
+var total = calculateBill(1200, 2); //Callling function here so it runs the functio above an return the value by applying the aritematic block 
+document.write("Total Bill: Rs. " + total + "<br><br>");
+
+function thankYou()
+{
+    var message = "Thank you for your order!";
+    document.write(message + "<br>");
+}
+thankYou();
+
+</script>
+
+</body>
+</html>

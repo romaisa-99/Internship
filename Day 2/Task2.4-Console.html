@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission System</title>
+</head>
+
+<body>
+
+<h1>Student Admission System</h1>
+
+<script>
+
+var name = "Ali"; // var is a variable decalartion variable thst is used to create a variable.
+var age = 19; // age is (identifier) and 19 is its value that is asssigned to it.
+var marks = 82;
+var attendance = 85;
+var feePaid = true;
+
+console.time("Test Time");
+console.log(name);
+console.log(age);
+console.log(age + 5);
+console.log([marks, attendance, feePaid, name]);
+console.table([1, 2, 3, 4, 5]);
+console.error("Something went wrong!");
+console.warn("This is your final warning!");
+console.timeEnd("Test Time");
+
+console.log("------------------------------------------------");
+
+console.log(age == marks);
+console.log(age === marks);
+console.log(age != marks);
+console.log(age !== marks);
+console.log(age > marks);
+console.log(age < marks);
+console.log(age >= marks);
+console.log(age <= marks);
+console.log(null == undefined);
+console.log(null === undefined);
+
+console.log("------------------------------------------------");
+
+if (marks > age)
+{
+    document.write("Marks are greater than age<br>");
+}
+
+console.log("------------------------------------------------");
+
+var age = 19;
+
+if (age >= 18 && attendance >= 75)
+{
+    console.log("Eligible for admission ");
+}
+
+if (age >= 18 || marks >= 90)
+{
+    console.log("Eligible for special case");
+}
+
+if (!(age < 18))
+{
+    console.log("Not underage.");
+}
+
+
+</script>
+
+</body>
+</html>

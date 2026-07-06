@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C</title>
+</head>
+
+<body>
+
+<h1>Student Welcome System</h1>
+
+<script>
+    var system = "Student Welcome System";
+
+alert("Welcome to the " + system);
+
+var name = prompt("Enter your Name:");
+var age = prompt("Enter your Age:");
+
+var check = confirm("Is this information correct? \n\n Name: " + name + "\nAge: " + age);
+
+if (check)
+{
+    document.write("<h2>Student Details</h2>");
+    document.write("Name: " + name + "<br>");
+    document.write("Age: " + age + "<br>");
+    document.write("Welcome " + name + "!");
+}
+else
+{
+    document.write("Please refresh the page and enter the correct information.");
+}
+
+</script>
+
+</body>
+</html>

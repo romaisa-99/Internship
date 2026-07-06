@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Loops</title>
+</head>
+
+<body>
+
+<h1>Student Roll Numbers</h1>
+
+<script>
+
+document.write("<h2>While Loop (with continue & break)</h2>");
+
+var i = 1;
+//While Loop
+while(i <= 10)
+{
+    if(i == 3)
+    {
+        i++;
+        continue; // skip number 3
+    }
+
+    if(i == 8)
+    {
+        document.write("Loop stopped at 8<br>");
+        break; // stop loop at 8
+    }
+
+    document.write("Roll Number: " + i + "<br>");
+    i++;
+}
+
+//Do While Loop
+document.write("<br><h2>Do While Loop</h2>");
+
+var j = 1;
+
+do
+{
+    if(j == 4)
+    {
+        j++;
+        continue; // skip 4
+    }
+
+    document.write("Roll Number: " + j + "<br>");
+    j++;
+
+}
+while(j <= 10);
+
+//For Loop
+document.write("<br><h2>For Loop</h2>");
+
+for(var k = 1; k <= 10; k++)
+{
+    if(k == 2)
+    {
+        continue; // skip 2
+    }
+
+    if(k == 7)
+    {
+        document.write("Loop stopped at 7<br>");
+        break; // stop loop at 7
+    }
+
+    document.write("Roll Number: " + k + "<br>");
+}
+
+// If Else on while loop
+document.write("<br><h2>While Loop (using If-Else))</h2>");
+
+var x = 1;
+
+while(x <= 10)
+{
+    if(x == 5)
+    {
+        x++;
+        continue; //or if we leave this space empty it will not print number 5 
+    }
+    else
+    {
+        document.write("Roll Number: " + x + "<br>");
+    }
+
+    x++;
+}
+
+
+</script>
+
+</body>
+
+</html>

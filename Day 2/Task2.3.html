@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cases</title>
+</head>
+
+<body>
+
+<h1>If Else and Switch and Break</h1>
+
+<script>
+ 
+var marks=60;
+ 
+if (marks >= 50)
+{
+    document.write("PASS<br>");
+}
+else
+{
+    document.write("FAIL<br>");
+}
+
+var result = (marks >= 80) ? "Scholarship Granted" : "No Scholarship";
+document.write(result + "<br><br>");
+
+var grade;
+
+if (marks >= 90)
+{
+    grade = "A";
+}
+else if (marks >= 80)
+{
+    grade = "B";
+}
+else if (marks >= 70)
+{
+    grade = "C";
+}
+else if (marks >= 60)
+{
+    grade = "D";
+}
+else
+{
+    grade = "F";
+}
+
+switch (grade)
+{
+    case "A":
+        document.write("Grade A - Excellent");
+        break;
+
+    case "B":
+        document.write("Grade B - Very Good");
+        break;
+
+    case "C":
+        document.write("Grade C - Good");
+        break;
+
+    case "D":
+        document.write("Grade D - Average");
+        break;
+
+    case "F":
+        document.write("Grade F - Fail");
+        break;
+
+    default:
+        document.write("Invalid Grade");
+}
+</script>
+
+</body>
+</html>

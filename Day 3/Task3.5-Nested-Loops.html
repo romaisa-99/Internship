@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title> Nested Loop </title>
+    <!--Nessted Loop means a loop  within a loop-->
+    <!--When we need to display a data ina tabular form we use neste Loop-->
+    <!--Let's take 'A' which represents Rows and Outerloop
+    and we have 'B' which represents Columns and Innerloop-->
+    <!--Nested Loops are used when we are working on a table, patterns and Arrays-->
+</head>
+<body>
+    <script>
+        document.write("<h3> Nested Loops </h3>" + "<br>");
+    for (var a=1; a<=100; a=a+10){ // rows and outerloop
+        for (var b=a; b<a+10; b++){ //columns and innerloop
+            document.write("| ");
+            document.write(" " + b);
+        }       
+        document.write("|" + "<br>");
+    }
+    
+    document.write("<h3> Nested Loop Example 1 </h3>" + "<br>");
+    for (var r=1; r<=5; r++){
+        for (var n=1; n<=r; n++){
+            document.write(n + " ");
+        }
+        document.write("<br>");
+    } 
+
+      document.write("<h3> Nested Loop Example 2 </h3>" + "<br>");
+    for (var r=1; r<=5; r++){
+        for (var n=1; n<=r; n++){
+            document.write(r + " ");
+        }
+        document.write("<br>");
+    } 
+    
+    document.write("<h3> Nested Loop Example 3 </h3>" + "<br>");
+    for (var r=5; r>=1; r--){
+        for (var n=1; n<=r; n++){
+            document.write(r + " ");
+        }
+        document.write("<br>");
+    } 
+    
+    document.write("<h3> Nested Loop Example 4 </h3>" + "<br>");
+    for (var r=5; r>=1; r--){
+        for (var n=r; n>=1; n--){
+            document.write(n + " ");
+        }
+        document.write("<br>");
+    }
+    
+
+    
+</script>
+</body>
+</html>

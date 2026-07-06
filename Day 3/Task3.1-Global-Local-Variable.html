@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Information System</title>
+</head>
+
+<body>
+
+<h1>Book Information System</h1>
+
+<script>
+
+var library = "City Library"; //Global Variable (it works inside and outsde the function block)
+
+function showLibrary()
+{
+    document.write("<h2>Library Details</h2>");
+    document.write("Library Name: " + library + "<br><br>");
+}
+
+function showBook()
+{
+    var book = "JavaScript Basics"; // Local variable (is works only Inside the function Block)
+
+    document.write("<h2>Book Details</h2>");
+    document.write("Library Name: " + library + "<br>");
+    document.write("Book Name: " + book);
+}
+
+showLibrary();
+showBook();
+
+</script>
+
+</body>
+</html>
