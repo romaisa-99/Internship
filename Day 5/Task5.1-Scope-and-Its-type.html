@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Scope</title>
+</head>
+<body>
+    <script>
+        //Global Scope
+        document.write("<h3> Global Scope: </h3>");
+        var name = "Aleena";
+        function showName()
+        {
+            document.write(name + "<br>");
+        }
+        showName();
+
+        let city = "Karachi";
+        document.write(city + "<br>");
+        function showCity()
+        {
+           document.write(city + "<br>");
+        }
+        showCity();
+
+        const country = "Pakistan";
+        document.write(country + "<br>");
+        function showCountry()
+        {
+            document.write(country);
+        }
+        showCountry();
+
+        //Function Scope
+        /*Variables declared inside a function 
+        can only be used inside that function.*/
+        document.write("<h3> Function Scope: </h3>");
+        //var
+        function student()
+        {
+            var name1 = "Aleena";  
+            document.write("Function Scope in var: " +  name1 + "<br>");
+        }
+        student();
+        document.write(typeof name1 + "<br>");
+
+        //Let
+        function student1()
+        {
+           let name2 = "Aleena";   
+            document.write("Function Scope in Let: " + name2 + "<br>");
+        }
+        student1();
+        document.write(typeof name2 + "<br>");
+
+        //const
+        function student2()
+        {
+           const age = 12;   
+            document.write("Function Scope in Const: "+ age + "<br>");
+        }
+        student2();
+        document.write(typeof age + "<br>");
+
+        //Block Scope
+        /* A block is anything inside a {} such as
+        if, for or while statement*/
+        document.write("<h3>Block Scope: </h3>");
+
+        //var
+     /*   if (true)
+        {
+            var marks = 90
+            document.write(marks + "<br>");
+            let marks1 = 86
+            document.write("Inside block in let:" + marks1 + "<br>");
+             const marks2 = 94
+            document.write("Inside block in const:" + marks2 + "<br>");
+
+
+
+             document.write(marks  + "<br>");
+        document.write("Outside bloack in let: " +marks1 + "<br>");
+ document.write("Outside bloack in const: " +marks2 + "<br>"); 
+
+        }*/
+      
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
