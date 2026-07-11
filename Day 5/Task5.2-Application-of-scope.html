@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title> Application of Scope </title>
+    </head>
+    <body>
+        <script>
+            document.write("<h3> Application of Scope: </h3>")
+
+            //Scope Application of 'let'
+
+            //Global Scope
+            /* let studentName = "Aleena";
+            let marks = 85;
+
+            function showStudent()
+            {
+                console.log("Student Name: " + studentName );
+                console.log("Marks: " + marks );
+            }
+            showStudent();
+            console.log("Student Name: " + studentName );
+            console.log("Marks: " + marks ); */
+
+            //Function(Local) Scope
+            //if the declaration is dones inside the function and is being called outside the function it will give us an error.
+          /*   function showStudent()
+            {
+                let studentName = "Aleena"; 
+                let marks = 85;
+                console.log("Student Name: " + studentName );
+                console.log("Marks: " + marks );
+            }
+            showStudent();
+            console.log("Student Name: " + studentName );
+            console.log("Marks: " + marks ); */
+            
+            //Blocked Scope
+          // Block Scope using let
+
+          /* let marks = 75;
+
+          if (marks >= 50)
+          {
+            let result = "PASS";
+            let grade = "B"
+            console.log("Inside if block:");
+            console.log("Marks:", marks);
+            console.log("Result:", result);
+            console.log("Grade:", grade);
+        }
+        else
+        {
+            let result = "FAIL";
+            console.log("Inside else block:");
+            console.log("Marks:", marks);
+            console.log("Result:", result);
+        }
+        console.log("Marks:", marks);
+        console.log(result); */
+
+        /* let marks = 75;
+        if (marks >= 50)
+        {
+            let result = "PASS";
+            let grade = "B";
+        }
+        console.log("Marks:", marks);
+        console.log("Result:", result);
+        console.log("Grade:", grade);
+        */
+
+        // var in Global
+        
+/*var studentName = "Aleena";
+var marks = 85;
+
+function showStudent()
+{
+    console.log("Student Name: " + studentName);
+    console.log("Marks: " + marks);
+}
+
+showStudent();
+
+console.log("Student Name: " + studentName);
+console.log("Marks: " + marks);*/
+
+
+
+// Function(Local) Scope
+// If var is declared inside a function, it can only be accessed inside that function.
+
+ 
+/* function showStudent()
+{
+    var studentName = "Aleena";
+    var marks = 85;
+
+    console.log("Student Name: " + studentName);
+    console.log("Marks: " + marks);
+}
+showStudent();
+console.log(studentName);
+console.log(marks);
+ */
+
+
+// Block Scope using var
+// var does not follow block scope.
+// Variables declared inside if block can be accessed outside the block.
+
+/* var marks = 75;
+if(marks >= 50)
+{
+    var result = "PASS";
+    var grade = "B";
+    console.log("Inside if block:");
+    console.log("Marks:", marks);
+    console.log("Result:", result);
+    console.log("Grade:", grade);
+}
+console.log("Outside if block:");
+console.log("Marks:", marks);
+console.log("Result:", result);
+console.log("Grade:", grade); */
+
+// const in global
+
+/* const studentName = "Aleena";
+const marks = 85;
+
+function showStudent()
+{
+    console.log("Student Name: " + studentName);
+    console.log("Marks: " + marks);
+}
+
+showStudent();
+console.log("Student Name: " + studentName);
+console.log("Marks: " + marks); */
+
+
+
+// Function(Local) Scope
+
+
+/* function showStudent()
+{
+    const studentName = "Aleena";
+    const marks = 85;
+
+    console.log("Student Name: " + studentName);
+    console.log("Marks: " + marks);
+}
+
+showStudent();
+console.log(studentName);
+console.log(marks);
+ */
+
+
+// Block Scope using const
+
+const marks = 75;
+
+if(marks >= 50)
+{
+    const result = "PASS";
+    const grade = "B";
+
+    console.log("Inside if block:");
+    console.log("Marks:", marks);
+    console.log("Result:", result);
+    console.log("Grade:", grade);
+}
+console.log("Outside if block:");
+console.log("Marks:", marks);
+console.log("Result:", result);
+console.log("Grade:", grade);
+
+ 
+        </script>
+    </body>
+</html>
