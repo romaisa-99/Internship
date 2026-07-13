@@ -1,0 +1,374 @@
+<html>
+    <head>
+        <title> Applying Array in Real-Life</title>
+    </head>
+    <body>
+        <script> 
+// Situational Question: Student Management System Using Arrays in JavaScript
+// Question:
+// You are developing a Student Management System for a university. You need to store and manage students' information using JavaScript arrays.
+// Each student record should contain:
+// •	Student Name 
+// •	Marks 
+// •	Department 
+// •	CGPA 
+// Perform the following tasks using arrays:
+// 1.	Create an array to store student information. 
+// 2.	Take student data from the user using a loop. 
+// 3.	Store multiple student records using a multidimensional array. 
+// 4.	Display all student records in a table format. 
+// 5.	Update a student's information. 
+// 6.	Delete unwanted data from the array. 
+// 7.	Perform the following operations using array methods: 
+// o	Sort student names alphabetically. 
+// o	Reverse the order of students. 
+// o	Add a new student at the end using push(). 
+// o	Remove the last student using pop(). 
+// o	Add a new student at the beginning using unshift(). 
+// o	Remove the first student using shift(). 
+// o	Combine two department arrays using concat(). 
+// o	Convert the array into a string using join() and toString(). 
+// o	Extract some student records using slice(). 
+// o	Insert or remove student records using splice(). 
+// 8.	Check whether a given variable is an array or not using Array.isArray(). 
+// 9.	Search student records: 
+// o	Find the index of a student using indexOf(). 
+// o	Find the last occurrence using lastIndexOf(). 
+// o	Check if a student exists using includes(). 
+// 10.	Apply conditions: 
+// •	Check if some students have marks greater than 80 using some(). 
+// •	Check if every student has passed using every(). 
+// •	Find the first student who scored above 90 using find(). 
+// •	Find the index of the first student who scored above 90 using findIndex(). 
+// •	Create a new array containing only passed students using filter(). 
+// 11.	Display all student names using the forEach() loop.
+
+//Solution
+//1. Structure: [Name, Marks, Department, CGPA]
+
+var students = [
+    ["Aleena", 95, "BSSE", 3.8],
+    ["Natasha", 78, "BSFINTECH", 3.2],
+    ["Romaisa", 88, "BSCS", 3.5],
+    ["Maha", 65, "BBA", 3.0]
+];
+
+
+// Display Original Student Records
+
+document.write("<h2>Student Records</h2>");
+
+document.write("<table border='1px' cellspacing='0'>");
+
+document.write("<tr>");
+document.write("<th>Name</th>");
+document.write("<th>Marks</th>");
+document.write("<th>Department</th>");
+document.write("<th>CGPA</th>");
+document.write("</tr>");
+
+for(var i = 0; i < students.length; i++)
+{
+    document.write("<tr>");
+
+    for(var j = 0; j < students[i].length; j++)
+    {
+        document.write("<td>" + students[i][j] + "</td>");
+    }
+
+    document.write("</tr>");
+}
+
+document.write("</table>");
+
+
+
+/* // Taking User Input Using Loop
+
+var newStudent = new Array();
+
+for(var i = 0; i < 4; i++)
+{
+    newStudent[i] = prompt("Enter Student Name, Marks, Department or CGPA:");
+}
+
+document.write("<br><b>User Added Student:</b><br>");
+document.write(newStudent + "<br>");
+
+ */
+
+/* // Adding User Student into Main Array
+
+students.push(newStudent);
+
+document.write("<br><b>After Push:</b><br>");
+document.write(students + "<br>");
+ */
+
+
+// Updating Array Value
+
+students[1][0] = "Sara";
+
+document.write("<br><b>After Updating Student Name:</b><br>");
+document.write(students + "<br>");
+
+
+
+// Deleting Data
+
+delete students[2][3];
+
+document.write("<br><b>After Delete CGPA:</b><br>");
+document.write(students + "<br>");
+
+
+
+// Student Names Array
+
+var names = ["Aleena","Natasha","Romaisa","Maha"];
+
+
+// Sort()
+
+document.write("<h3>Sort:</h3>");
+names.sort();
+document.write(names + "<br>");
+
+
+// Reverse()
+
+document.write("<h3>Reverse:</h3>");
+names.reverse();
+document.write(names + "<br>");
+
+
+// Push()
+
+names.push("Alina");
+
+document.write("<h3>Push:</h3>");
+document.write(names + "<br>");
+
+
+// Pop()
+
+names.pop();
+
+document.write("<h3>Pop:</h3>");
+document.write(names + "<br>");
+
+
+// Unshift()
+
+names.unshift("Romi");
+
+document.write("<h3>Unshift:</h3>");
+document.write(names + "<br>");
+
+
+// Shift()
+
+names.shift();
+
+document.write("<h3>Shift:</h3>");
+document.write(names + "<br>");
+
+
+
+
+// Concat()
+
+var dept1 = ["BSSE","BSCS"];
+var dept2 = ["BBA","BSFINTECH"];
+
+var departments = dept1.concat(dept2);
+
+document.write("<h3>Concat:</h3>");
+document.write(departments + "<br>");
+
+
+
+
+// Join()
+
+var joinDept = departments.join(" - ");
+
+document.write("<h3>Join:</h3>");
+document.write(joinDept + "<br>");
+
+
+
+
+// Slice()
+
+var courses = ["BSSE","BBA","BSCS","BFT","BSAI"];
+
+var newCourses = courses.slice(1,4);
+
+document.write("<h3>Slice:</h3>");
+document.write(newCourses + "<br>");
+
+
+
+
+// Splice()
+
+courses.splice(2,0,"BSIT");
+
+document.write("<h3>Splice:</h3>");
+document.write(courses + "<br>");
+
+
+
+
+// Array.isArray()
+
+document.write("<h3>Array.isArray()</h3>");
+
+var check = ["Apple","Mango","Banana"];
+
+if(Array.isArray(check))
+{
+    document.write("This is an Array<br>");
+}
+else
+{
+    document.write("This is not an Array<br>");
+}
+
+
+
+
+// indexOf()
+
+var studentNames = ["Aleena","Natasha","Romaisa","Natasha"];
+
+var index = studentNames.indexOf("Natasha");
+
+document.write("<h3>IndexOf:</h3>");
+document.write("Natasha index is: " + index + "<br>");
+
+
+
+
+// lastIndexOf()
+
+var last = studentNames.lastIndexOf("Natasha");
+
+document.write("<h3>LastIndexOf:</h3>");
+document.write("Last Natasha index is: " + last + "<br>");
+
+
+
+
+// includes()
+
+document.write("<h3>Includes:</h3>");
+
+if(studentNames.includes("Aleena"))
+{
+    document.write("Aleena exists in array<br>");
+}
+else
+{
+    document.write("Student not found<br>");
+}
+
+
+
+
+// some()
+
+document.write("<h3>Some()</h3>");
+
+var marks = [45,78,90,65];
+
+var result = marks.some(checkMarks);
+
+document.write(result + "<br>");
+
+function checkMarks(mark)
+{
+    return mark > 80;
+}
+
+
+
+
+// every()
+
+document.write("<h3>Every()</h3>");
+
+var passMarks = [60,70,80,90];
+
+var result2 = passMarks.every(checkPass);
+
+document.write(result2 + "<br>");
+
+function checkPass(mark)
+{
+    return mark >= 50;
+}
+
+
+
+
+// find()
+
+document.write("<h3>Find()</h3>");
+
+var score = [70,85,95,60];
+
+var highest = score.find(findMarks);
+
+document.write(highest + "<br>");
+
+function findMarks(mark)
+{
+    return mark > 90;
+}
+
+
+
+
+// findIndex()
+
+document.write("<h3>FindIndex()</h3>");
+
+var position = score.findIndex(findMarks);
+
+document.write(position + "<br>");
+
+
+
+
+// filter()
+
+document.write("<h3>Filter()</h3>");
+
+var passed = score.filter(checkPass);
+
+document.write(passed + "<br>");
+
+
+
+
+// forEach()
+
+document.write("<h3>forEach()</h3>");
+
+var studentList = ["Aleena","Natasha","Romaisa","Maha"];
+
+studentList.forEach(display);
+
+function display(value,index)
+{
+    document.write(index + " : " + value + "<br>");
+}
+
+
+
+        </script>
+    </body>
+</html>
