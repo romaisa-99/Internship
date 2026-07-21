@@ -44,21 +44,99 @@
 // 11.	Display all student names using the forEach() loop.
 
 //Solution
-//1. Structure: [Name, Marks, Department, CGPA]
+//1.Structure: [Name, Marks, Department, CGPA]
 
-var students = [
-    ["Aleena", 95, "BSSE", 3.8],
-    ["Natasha", 78, "BSFINTECH", 3.2],
-    ["Romaisa", 88, "BSCS", 3.5],
-    ["Maha", 65, "BBA", 3.0]
-];
+var students = [];
+
+//2. Taking student data
+// Number of students
+for(var i = 0; i < total; i++)
+{
+    var name = prompt("Enter Student Name:");
+    var marks = Number(prompt("Enter Marks:"));
+    var department = prompt("Enter Department:");
+    var cgpa = Number(prompt("Enter CGPA:"));
+
+    students.push([name, marks, department, cgpa]);
+}
+
+//Create a table
+function showTable(title)
+{
+    document.write("<h2>" + title + "</h2>");
+    document.write("<table border='1' cellspacing='0' cellpadding='8'>");
+
+    document.write("<tr>");
+    document.write("<th>Name</th>");
+    document.write("<th>Marks</th>");
+    document.write("<th>Department</th>");
+    document.write("<th>CGPA</th>");
+    document.write("</tr>");
+
+    for(var i = 0; i < students.length; i++)
+    {
+        document.write("<tr>");
+        for(var j = 0; j < students[i].length; j++)
+        {
+            document.write("<td>" + students[i][j] + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table><br>");
+}
+showTable("Student Records");
+
+//Update a Student's Information
+students[0][0] = "Sara";
+students[0][1] = 90;
+students[0][2] = "BSAI";
+students[0][3] = 3.9;
+showTable("After Updating Student");
+
+// Delete student Record
+students.splice(1,1);
+showTable("After Deleting Student");
+
+//Perform Array Methods
+
+students.sort();
+showTable("After Sort()");
+
+students.reverse();
+showTable("After Reverse()");
+
+students.push(["Ali",92,"BSIT",3.8]);
+showTable("After Push()");
+
+students.pop();
+showTable("After Pop()");
+
+students.unshift(["Hamza",85,"BBA",3.4]);
+showTable("After Unshift()");
+
+students.shift();
+showTable("After Shift()");
 
 
-// Display Original Student Records
+var dept1 = ["BSSE","BSCS"];
+var dept2 = ["BBA","BSFINTECH"];
+var departments = dept1.concat(dept2);
+document.write("<h3>Concat()</h3>");
+document.write(departments + "<br><br>");
 
-document.write("<h2>Student Records</h2>");
+document.write("<h3>Join()</h3>");
+document.write(departments.join(" - "));
+document.write("<br><br>");
 
-document.write("<table border='1px' cellspacing='0'>");
+document.write("<h3>toString()</h3>");
+document.write(departments.toString());
+document.write("<br><br>");
+
+//slice()
+var newStudents = students.slice(0,2);
+
+document.write("<h3>Slice()</h3>");
+document.write("<table border='1' cellspacing='0' cellpadding='8'>");
 
 document.write("<tr>");
 document.write("<th>Name</th>");
@@ -67,307 +145,130 @@ document.write("<th>Department</th>");
 document.write("<th>CGPA</th>");
 document.write("</tr>");
 
-for(var i = 0; i < students.length; i++)
+for(var i = 0; i < newStudents.length; i++)
 {
     document.write("<tr>");
 
-    for(var j = 0; j < students[i].length; j++)
+    for(var j = 0; j < newStudents[i].length; j++)
     {
-        document.write("<td>" + students[i][j] + "</td>");
+        document.write("<td>" + newStudents[i][j] + "</td>");
     }
 
     document.write("</tr>");
 }
+document.write("</table><br>");
 
-document.write("</table>");
+//splice()
+students.splice(1,0,["Ayesha",91,"BSAI",3.7]);
+showTable("After Splice()");
 
-
-
-/* // Taking User Input Using Loop
-
-var newStudent = new Array();
-
-for(var i = 0; i < 4; i++)
-{
-    newStudent[i] = prompt("Enter Student Name, Marks, Department or CGPA:");
-}
-
-document.write("<br><b>User Added Student:</b><br>");
-document.write(newStudent + "<br>");
-
- */
-
-/* // Adding User Student into Main Array
-
-students.push(newStudent);
-
-document.write("<br><b>After Push:</b><br>");
-document.write(students + "<br>");
- */
-
-
-// Updating Array Value
-
-students[1][0] = "Sara";
-
-document.write("<br><b>After Updating Student Name:</b><br>");
-document.write(students + "<br>");
-
-
-
-// Deleting Data
-
-delete students[2][3];
-
-document.write("<br><b>After Delete CGPA:</b><br>");
-document.write(students + "<br>");
-
-
-
-// Student Names Array
-
-var names = ["Aleena","Natasha","Romaisa","Maha"];
-
-
-// Sort()
-
-document.write("<h3>Sort:</h3>");
-names.sort();
-document.write(names + "<br>");
-
-
-// Reverse()
-
-document.write("<h3>Reverse:</h3>");
-names.reverse();
-document.write(names + "<br>");
-
-
-// Push()
-
-names.push("Alina");
-
-document.write("<h3>Push:</h3>");
-document.write(names + "<br>");
-
-
-// Pop()
-
-names.pop();
-
-document.write("<h3>Pop:</h3>");
-document.write(names + "<br>");
-
-
-// Unshift()
-
-names.unshift("Romi");
-
-document.write("<h3>Unshift:</h3>");
-document.write(names + "<br>");
-
-
-// Shift()
-
-names.shift();
-
-document.write("<h3>Shift:</h3>");
-document.write(names + "<br>");
-
-
-
-
-// Concat()
-
-var dept1 = ["BSSE","BSCS"];
-var dept2 = ["BBA","BSFINTECH"];
-
-var departments = dept1.concat(dept2);
-
-document.write("<h3>Concat:</h3>");
-document.write(departments + "<br>");
-
-
-
-
-// Join()
-
-var joinDept = departments.join(" - ");
-
-document.write("<h3>Join:</h3>");
-document.write(joinDept + "<br>");
-
-
-
-
-// Slice()
-
-var courses = ["BSSE","BBA","BSCS","BFT","BSAI"];
-
-var newCourses = courses.slice(1,4);
-
-document.write("<h3>Slice:</h3>");
-document.write(newCourses + "<br>");
-
-
-
-
-// Splice()
-
-courses.splice(2,0,"BSIT");
-
-document.write("<h3>Splice:</h3>");
-document.write(courses + "<br>");
-
-
-
-
-// Array.isArray()
-
+//Check if It Is an Array
 document.write("<h3>Array.isArray()</h3>");
-
-var check = ["Apple","Mango","Banana"];
-
-if(Array.isArray(check))
+if(Array.isArray(students))
 {
-    document.write("This is an Array<br>");
+    document.write("students is an Array");
 }
 else
 {
-    document.write("This is not an Array<br>");
+    document.write("students is not an Array");
+}
+document.write("<br><br>");
+
+//Create Student Names Array
+var studentNames = [];
+for(var i = 0; i < students.length; i++)
+{
+    studentNames.push(students[i][0]);
 }
 
+//indexOf()
+document.write("<h3>indexOf()</h3>");
+document.write(studentNames.indexOf("Sara"));
+document.write("<br><br>");
 
+//lastIndexOf()
+studentNames.push("Sara");
+document.write("<h3>lastIndexOf()</h3>");
+document.write(studentNames.lastIndexOf("Sara"));
+document.write("<br><br>");
 
-
-// indexOf()
-
-var studentNames = ["Aleena","Natasha","Romaisa","Natasha"];
-
-var index = studentNames.indexOf("Natasha");
-
-document.write("<h3>IndexOf:</h3>");
-document.write("Natasha index is: " + index + "<br>");
-
-
-
-
-// lastIndexOf()
-
-var last = studentNames.lastIndexOf("Natasha");
-
-document.write("<h3>LastIndexOf:</h3>");
-document.write("Last Natasha index is: " + last + "<br>");
-
-
-
-
-// includes()
-
-document.write("<h3>Includes:</h3>");
-
-if(studentNames.includes("Aleena"))
+//includes()
+document.write("<h3>includes()</h3>");
+if(studentNames.includes("Sara"))
 {
-    document.write("Aleena exists in array<br>");
+    document.write("Sara exists in the array.");
 }
 else
 {
-    document.write("Student not found<br>");
+    document.write("Student not found.");
 }
+document.write("<br><br>");
 
-
-
-
-// some()
-
-document.write("<h3>Some()</h3>");
-
-var marks = [45,78,90,65];
-
-var result = marks.some(checkMarks);
-
-document.write(result + "<br>");
-
-function checkMarks(mark)
+//some()
+var result = students.some(function(student)
 {
-    return mark > 80;
-}
+    return student[1] > 80;
+});
+document.write("<h3>some()</h3>");
+document.write(result + "<br><br>");
 
-
-
-
-// every()
-
-document.write("<h3>Every()</h3>");
-
-var passMarks = [60,70,80,90];
-
-var result2 = passMarks.every(checkPass);
-
-document.write(result2 + "<br>");
-
-function checkPass(mark)
+//every()
+var result = students.every(function(student)
 {
-    return mark >= 50;
-}
+    return student[1] >= 50;
+});
+document.write("<h3>every()</h3>");
+document.write(result + "<br><br>");
 
-
-
-
-// find()
-
-document.write("<h3>Find()</h3>");
-
-var score = [70,85,95,60];
-
-var highest = score.find(findMarks);
-
-document.write(highest + "<br>");
-
-function findMarks(mark)
+//find()
+var topper = students.find(function(student)
 {
-    return mark > 90;
-}
+    return student[1] > 90;
+});
+document.write("<h3>find()</h3>");
+document.write(topper + "<br><br>");
 
-
-
-
-// findIndex()
-
-document.write("<h3>FindIndex()</h3>");
-
-var position = score.findIndex(findMarks);
-
-document.write(position + "<br>");
-
-
-
-
-// filter()
-
-document.write("<h3>Filter()</h3>");
-
-var passed = score.filter(checkPass);
-
-document.write(passed + "<br>");
-
-
-
-
-// forEach()
-
-document.write("<h3>forEach()</h3>");
-
-var studentList = ["Aleena","Natasha","Romaisa","Maha"];
-
-studentList.forEach(display);
-
-function display(value,index)
+//findIndex()
+var index = students.findIndex(function(student)
 {
-    document.write(index + " : " + value + "<br>");
+    return student[1] > 90;
+});
+document.write("<h3>findIndex()</h3>");
+document.write(index + "<br><br>");
+
+//filter()
+var passed = students.filter(function(student)
+{
+    return student[1] >= 50;
+});
+
+document.write("<h3>Passed Students</h3>");
+
+document.write("<table border='1' cellspacing='0' cellpadding='8'>");
+
+document.write("<tr>");
+document.write("<th>Name</th>");
+document.write("<th>Marks</th>");
+document.write("<th>Department</th>");
+document.write("<th>CGPA</th>");
+document.write("</tr>");
+for(var i = 0; i < passed.length; i++)
+{
+    document.write("<tr>");
+    for(var j = 0; j < passed[i].length; j++)
+    {
+        document.write("<td>" + passed[i][j] + "</td>");
+    }
+    document.write("</tr>");
 }
+document.write("</table><br>");
 
-
+//Display Student Names Using forEach()
+document.write("<h3>Student Names</h3>");
+studentNames.forEach(function(name,index)
+{
+    document.write((index + 1) + ". " + name + "<br>");
+});
 
         </script>
     </body>
