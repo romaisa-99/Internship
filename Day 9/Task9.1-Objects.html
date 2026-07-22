@@ -1,32 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
         //simple object
+
         var student = {
             name: "Romaisa",
             age: 21, 
             department: "BSSE"
         };
-        document.write(student + "<br>");
-        console.log(student);
         document.write("Name: " + student.name + "<br>");
         document.write("Age: " + student.age + "<br>");
         document.write("Department: " + student.department + "<br>");
         
+        document.write(student + "<br>");
+        console.log(student);
+
         //placing an array in an object
         var student = {
             name: "Romaisa",
             age: 21, 
             department: "BSSE",
-            favCourse: ['Data Science','SQE','AI']
-        };
+            favCourse: ['Data Science','SQE','AI'],
+            }
+         
         document.write("Fav Course: " + student.favCourse+ "<br>");
+        
         // pinting value on a specifi index
         document.write(student.favCourse[2] + "<br>");
 
@@ -184,6 +185,16 @@ var names = students.map(function(student){
 
 console.log(names);
 
+
+///for ppt
+
+var student = {
+    name: "Aleena",
+    age: 20,
+    department: "BSSE"
+};
+
+document.write(student.name);
 
     </script>
 </body>
