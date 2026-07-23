@@ -4,197 +4,183 @@
 </head>
 <body>
     <script>
-        //simple object
+        // //simple object
 
-        var student = {
-            name: "Romaisa",
-            age: 21, 
-            department: "BSSE"
-        };
-        document.write("Name: " + student.name + "<br>");
-        document.write("Age: " + student.age + "<br>");
-        document.write("Department: " + student.department + "<br>");
+        // var student = {
+        //     name: "Romaisa",
+        //     age: 21, 
+        //     department: "BSSE"
+        // };
+        // document.write("Name: " + student.name + "<br>");
+        // document.write("Age: " + student.age + "<br>");
+        // document.write("Department: " + student.department + "<br>");
         
-        document.write(student + "<br>");
-        console.log(student);
+        // document.write(student + "<br>");
+        // console.log(student);
 
-        //placing an array in an object
-        var student = {
-            name: "Romaisa",
-            age: 21, 
-            department: "BSSE",
-            favCourse: ['Data Science','SQE','AI'],
-            }
-         
-        document.write("Fav Course: " + student.favCourse+ "<br>");
-        
-        // pinting value on a specifi index
-        document.write(student.favCourse[2] + "<br>");
+        // //placing an array in an object
 
-        //function in an object
-         var student = {
-            name: "Romaisa",
-            age: 21, 
-            department: "BSSE",
-            favCourse: ['Data Science','SQE','AI'],
-            salary: function(){
-            return 25000;
-        }
-         }
-         document.write(student.salary() + "<br>");
+        // var student = {
+        //     name: "Romaisa",
+        //     age: 21, 
+        //     department: "BSSE",
+        //     favCourse: ['Data Science','SQE','AI'],
+        //     }     
+        // document.write("Fav Course: " + student.favCourse+ "<br>");
+        // // pinting value on a specifi index
+        // document.write(student.favCourse[2] + "<br>");
 
-         //now creating a function and calling the elements indeis the object 
-         var student = {
-            name: "Romaisa",
-            age: 21, 
-            department: "BSSE",
-            favCourse: ['Data Science','SQE','AI'],
-            salary: function(){
-            return 25000;
-        },
-         details: function() {
-            return this.name + " - " + this.department;
-         }
-        }
-        document.write(student.details() + "<br>");
+        // //function in an object
+        //  var student = {
+        //     name: "Romaisa",
+        //     age: 21, 
+        //     department: "BSSE",
+        //     favCourse: ['Data Science','SQE','AI'],
+            
+        //     salary: function(){
+        //     return 25000;
+        // }
+        //  }
+        //  document.write("Salary: " + student.salary() + "<br>");
 
-        //Accessing bject with in an object
-        var student = {
-            name: "Romaisa",
-            age: 21, 
-            department: "BSSE",
-            favCourse: ['Data Science','SQE','AI'],
-            living:{
-                'city':'Karachi',
-                'country': 'Pakistan'
-            },
-            salary: function(){
-            return 25000;
-        },
-         details: function() {
-            return this.name + " - " + this.department;
-         }
-        }
-        document.write(student.living.country);
+        //  //Creating a function and calling the elements indeis the object 
+        //  var student = {
+        //     name: "Romaisa",
+        //     age: 21, 
+        //     department: "BSSE",
+        //     favCourse: ['Data Science','SQE','AI'],
+        //     salary: function(){
+        //     return 25000;
+        // },
+        //  details: function() {
+        //     return this.name + " - " + this.department;
+        //  }
+        // }
+        // document.write(student.details() + "<br>");
+
+
+        // //Accessing bject with in an object
+        // var student = {
+        //     name: "Romaisa",
+        //     age: 21, 
+        //     department: "BSSE",
+        //     favCourse: ['Data Science','SQE','AI'],
+        //     living:{
+        //         'city':'Karachi',
+        //         'country': 'Pakistan'
+        //     },
+        //     salary: function(){
+        //     return 25000;
+        // },
+        //  details: function() {
+        //     return this.name + " - " + this.department;
+        //  }
+        // }
+        // document.write(student.living.country);
+
 
         //uilt-in Object Constructor (new Object())
         //Use: When you need to create a single object.
-        var person = new Object();
+       
+// var person = new Object();
 
-person.firstName = "Romaisa";
-person.lastName = "Shahbaz";
-person.age = 25;
+// person.firstName = "Romaisa";
+// person.lastName = "Shahbaz";
+// person.age = 25;
 
-console.log(person);
-document.write(person.firstName);
+// console.log(person);
+// document.write(person.firstName);
 
 //User-defined Object Constructor Function
 //This creates a template and allows us to create many objects easily.
-function Person(firstName, lastName, age) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-}
 
-var person1 = new Person("Romaisa", "Shahbaz", 25);
-var person2 = new Person("Alina", "Qamar", 20);
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+// }
 
-console.log(person1);
-console.log(person2);
+// var person1 = new Person("Alina", "Qamar", 20); 
+// var person2 = new Person("Romaisa", "Shahbaz", 25);
 
-document.write(person1.firstName);
+// console.log(person1);
+// console.log(person2);
+// document.write(person1.firstName);
 
-// array of an pfject
-var students = [
-    {//0 incdex conatins:
-        name: "Aleena",
-        age: 20,
-        department: "BSSE"
-    },
-    {//1 index contains
-        name: "Sara",
-        age: 21,
-        department: "BBA"
-    }
-];
-console.log(students);
-console.log(students[0].name);
+// // array of an pfject
+// var students = [
+//     { //0 index conatins:
+//         name: "Aleena",
+//         age: 21,
+//         department: "BSSE"
+//     },
 
-//. const with Arrays
-//const is used to declare a variable whose reference cannot be changed.
-const fruits = ["Apple", "Mango"];
-fruits.push("Orange");
-console.log(fruits);
-
-//const with Objects
-//const can also store objects.
-const student = {
-    name: "Aleena",
-    age: 20
-};
-
-console.log(student.name);
-
-//for Loop with Array of Objects
-var students = [
-    {
-        name: "Aleena",
-        age: 20,
-        department: "BSSE"
-    },
-    {
-        name: "Sara",
-        age: 21,
-        department: "BBA"
-    },
-    {
-        name: "Ali",
-        age: 22,
-        department: "BSCS"
-    }
-];
+//     { //1 index contains
+//         name: "Natasha",
+//         age: 21,
+//         department: "BBA"
+//     }
+// ];
+// console.log(students);
+// console.log(students[0].name);
 
 
-for(var i = 0; i < students.length; i++) {
+// //Using map() with Array of Objects
+// var students = [
+//     {name: "Aleena", marks: 90},
+//     {name: "Sara", marks: 85},
+//     {name: "Ali", marks: 80}
+// ];
 
-    console.log(students[i].name);
-    console.log(students[i].department);
-}
+// var names = students.map(s);
+// function s(students){
+//     return students.name;
+// }
+// console.log(names);
 
 
-//map() Array Method in JavaScript
-//The map() method is used to create a new array by applying a function on every element of an existing array.
-var numbers = [1, 2, 3, 4];
+//for...in Loop in Objects
+// var student = {
 
-var result = numbers.map(function(num){
-    return num * 2;
-});
+//     name: "Romaisa",
+//     age: 21,
+//     department: "BSSE"
+// };
+// for(var key in student){
 
-console.log(result);
+//     console.log(key + " : " + student[key]);
 
-//Using map() with Array of Objects
+// }
+
+//for/in Loop with an Array of Objects
 var students = [
     {name: "Aleena", marks: 90},
     {name: "Sara", marks: 85},
     {name: "Ali", marks: 80}
 ];
 
-var names = students.map(function(student){
-    return student.name;
-});
+for (var i in students) {
+    console.log(
+        students[i].name + " - " + students[i].marks 
+    );
+}
 
-console.log(names);
+// //map() with Objects
+// var students = [
+//     {name: "Aleena", marks: 90},
+//     {name: "Sara", marks: 85},
+//     {name: "Ali", marks: 80}
+// ];
+
+// var names = students.map(function(student) {
+//     return student.name;
+// });
+
+// console.log(names);
 
 
-///for ppt
 
-var student = {
-    name: "Aleena",
-    age: 20,
-    department: "BSSE"
-};
 
-document.write(student.name);
 
     </script>
 </body>
