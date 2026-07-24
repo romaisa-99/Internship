@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title> String Methods</title>
+    </head>
+    <body>
+        <script>
+
+// Simple string
+var name = "Romaisa";
+var color = "Dark Blue";
+console.log(name + " - " + color);
+
+document.write("String Methods" + "<br><br><br>")
+
+//length
+var text = "JavaScript";
+document.write("1. Length: " + text.length + "<br><br>");
+
+//toLowerCase()
+var text = "HELLO MY FRIEND!";
+document.write("2. toLowerCase(): " + text.toLowerCase() + "<br><br>");
+
+//toUpperCase()
+var text = "today is not a good day!";
+document.write("3. toUpperCase(): " + text.toUpperCase() + "<br><br>");
+
+//includs()
+var text = "I'm learning JavaScript";
+document.write("4. includes(): " + text.includes("Java") + "<br><br>");
+
+//startsWith()
+var text = "JavaScript";
+document.write("5. startsWith(): " + text.startsWith("Java") + "<br><br>");
+
+//endsWith()
+var text = "JavaScript";
+document.write("6. endsWith(): " +  text.endsWith("Script") + "<br><br>");
+
+//search()
+var text = "I'm learning JavaScript";
+document.write("7. search(): " + text.search("Java") + "<br><br>");
+
+//match()
+var text = "JavaScript";
+document.write("8. match(): " + text.match("Script") + "<br><br>");
+
+//indexOf()
+var text = "banana";
+document.write("9. indexOf(): " + text.indexOf("a") + "<br><br>");
+
+//lastIndexOf()
+var text = "banana";
+document.write("10. lastIndexOf():" + text.lastIndexOf("a") + "<br><br>");
+
+//replace()
+var text = "I like Tea";
+document.write("11. replace(): " + text.replace("Tea","Coffee") + "<br><br>");
+
+//trim()
+var text = " Hello      my friend    ,   Aleena";
+document.write("12. trim(): " + text.trim() + "<br><br>");
+
+//charAt()
+var text = "Java";
+document.write("13. charAt(): " + text.charAt(2) + "<br><br>");
+
+//charCodeAt()
+var text = "A";
+document.write("14. charCodeAt(): " + text.charCodeAt(0) + "<br><br>");
+
+//String.fromCharCode()
+var rom = [65,66,67]
+document.write("15. String.fromCharCode(): " +  String.fromCharCode(rom) + "<br><br>");
+
+//concat()
+var firstName = "Romaisa";
+var lastName = " Shahbaz";
+document.write("16. concat(): " + firstName.concat(lastName) + "<br><br>");
+
+//split()
+var fruits = "Apple,Banana,Mango,Orange";
+document.write("17. split(): " + fruits.split(",") + "<br><br>");
+
+//repeat()
+var text = "Hello ";
+document.write("18. repeat(): " + text.repeat(3) + "<br><br>");
+
+//slice()
+var text = "JavaScript";
+document.write("19. slice(): " + text.slice(4,10) + "<br><br>");
+
+//substr()
+var text = "JavaScript";
+document.write("20. substr(): " + text.substr(4,6) + "<br><br>");
+
+//substring()
+var text = "JavaScript";
+document.write("21. substring(): " + text.substring(4,10) + "<br><br>");
+
+//toString()
+var num = 123;
+document.write("22. toString(): " + num.toString() + "<br><br>");
+
+//valueOf()
+var text = new String("JavaScript");
+document.write("23. valueOf(): " + text.valueOf() + "<br><br>");
+
+/*Why do we need String Methods?
+String methods are used to easily work with text in JavaScript. They help us search, compare, 
+modify, extract, join, and format strings without writing long code. They save time, reduce code
+ repetition, and make programs easier to understand. String methods are commonly used in login
+ systems, search bars, form validation, text editors, and web applications.*/
+
+        </script> 
+
+    </body>
+</html>
