@@ -4,140 +4,138 @@
 </head>
 <body>
     <script>
-        //Using Builtin Array()
-        var ary= new Array();
-        ary[0] = "Aleena";
-        ary[1] = "Romaisa";
-        ary[3] = "BSSE";
-        document.write("<ul>");
-            for (var a= 0; a<5;a++){
-                document.write("<li>" + ary[a] + "</li>");
-            }
-         document.write("<ul>");
+    //     //Using Builtin Array()
+    //     var ary= new Array();
+    //     ary[0] = "Aleena";
+    //     ary[1] = "Romaisa";
+    //     ary[4] = "BSSE";
+    //     document.write("<ul>");
+    //         for (var i= 0; i<5;i++){
+    //             document.write("<li>" + ary[i] + "</li>");
+    //         }
+    //      document.write("<ul>");
 
-        //using user input array(using for loop)
-       var ary = new Array();
-        for(var i = 0; i < 5; i++)
-        {
-            ary[i] = prompt("Enter value:");
-        }
-         document.write("<ul>");
-            for (var a = 0; a < 5; a++){
-                document.write("<li>" + ary[a] + "</li>");
-            }
-         document.write("<ul>");
+    //     //using user input array(using for loop)
+    //    var ary = new Array();
+    //     for(var i = 0; i < 5; i++)
+    //     {
+    //         ary[i] = prompt("Enter value:");
+    //     }
+    //      document.write("<ul>");
+    //         for (var a = 0; a < 5; a++){
+    //             document.write("<li>" + ary[a] + "</li>");
+    //         }
+    //      document.write("<ul>");
       
-            //multidimensional Arrays
-            //if i neeed to access a value from a spcifc index and one value only we will do:
-             
-            
-var r=[
-    ["Aleena",90,"BSSE",3.4], 
-    ["Natasha",89, "BSFINTECH",3.3]
-];
-    document.write(r[0][2]);
+//             //multidimensional Arrays
+//             //if i neeed to access a value from a spcifc index and one value only we will do:   
+// var r=[
+//     ["Aleena",90,"BSSE",3.4], 
+//     ["Natasha",89, "BSFINTECH",3.3]
+// ];
+//     document.write(r[0][2]);
 
-var r = [
-    ["Aleena", 90, "BSSE", 3.4], 
-    ["Natasha", 89, "BSFINTECH", 3.3]
-];
+// var r = [
+//     ["Aleena", 90, "BSSE", 3.4], 
+//     ["Natasha", 89, "BSFINTECH", 3.3]
+// ];
 
-for(var i = 0; i < r.length; i++) //Rows
-{
-    for(var j = 0; j < r[i].length; j++) //Columns
-    {
-        document.write(r[i][j] + " ");
-    }
+// for(var i = 0; i < r.length; i++) //Rows
+// {
+//     for(var j = 0; j < r[i].length; j++) //Columns
+//     {
+//         document.write(r[i][j] + " ");
+//     }
 
-    document.write("<br>");
-}
+//     document.write("<br>");
+// }
 
 
-//3d arrays
+// //3d arrays
 
-var da = [
-    [
-        ["Ali", 90],
-        ["Sara", 85]
-    ]
-];
-for(var i = 0; i < da.length; i++)
-{
-    for(var j = 0; j < da[i].length; j++)
-    {
-        document.write(da[i][j] + "<br>");
-    }
-}
+// var da = [
+//     [
+//         ["Ali", 90],
+//         ["Sara", 85]
+//     ]
+// ];
+// for(var i = 0; i < da.length; i++)
+// {
+//     for(var j = 0; j < da[i].length; j++)
+//     {
+//         document.write(da[i][j] + "<br>");
+//     }
+// }
  
 
- //array of object
-let students = [
-    {
-        name: "Aleena",
-        marks: 90
-    },
-    {
-        name: "Natasha",
-        marks: 85
-    }
-];
+//  //array of object
+// let students = [
+//     {
+//         name: "Aleena",
+//         marks: 90
+//     },
+//     {
+//         name: "Natasha",
+//         marks: 85
+//     }
+// ];
 
-for(let i = 0; i < students.length; i++)
-{
-    document.write(students[i].name + " " + students[i].marks + "<br>");
-} 
+// for(let i = 0; i < students.length; i++)
+// {
+//     document.write(students[i].name + " " + students[i].marks + "<br>");
+// } 
 
-//Heterogenous Array
+// //Heterogenous Array
 
- var stu = ["Aleena", 20, true, 3.4];
-document.write(stu);
+//  var stu = ["Aleena", 20, true, 3.4];
+// document.write(stu);
 
 
-           var r=[ //r is the array
-                ["Aleena",90,"BSSE",3.4], 
-                ["Natasha",89, "BSFINTECH",3.3],
-                ["Natasha",89, "BSFINTECH",3.3],
-                ["Natasha",89, "BSFINTECH",3.3],
-                ["Natasha",89, "BSFINTECH",3.3]
-             ];
-             document.write(r.length);
-             document.write("<table border= '1px' cellspacing ='0'>");
-             for (var i=0; i<r.length; i++){ //r.length to get the numbers of columns in a arry.
-                document.write("<tr>");
-                for (var b=0; b<r[i].length; b++){  // to get the length of the number of elements in a row.
-                document.write("<td>" +r[i][b] + "</td> ") ; //first [] is for inner rry and second[] is for outer arry.
-            }
-            document.write("</tr>"); // when needed the break after inner loop
-             }// now in tabualar form
-             document.write("</table border= '1px'>"); */
+//            var r=[ //r is the array
+//                 ["Aleena",90,"BSSE",3.4], 
+//                 ["Natasha",89, "BSFINTECH",3.3],
+//                 ["Natasha",89, "BSFINTECH",3.3],
+//                 ["Natasha",89, "BSFINTECH",3.3],
+//                 ["Natasha",89, "BSFINTECH",3.3]
+//              ];
+//              document.write(r.length);
+//              document.write("<table border= '1px' cellspacing ='0'>");
+//              for (var i=0; i<r.length; i++){ //r.length to get the numbers of columns in a arry.
+//                 document.write("<tr>");
+//                 for (var b=0; b<r[i].length; b++){  // to get the length of the number of elements in a row.
+//                 document.write("<td>" +r[i][b] + "</td> ") ; //first [] is for inner rry and second[] is for outer arry.
+//             }
+//             document.write("</tr>"); // when needed the break after inner loop
+//              }// now in tabualar form
+            // document.write("</table border= '1px'>"); 
 
              //modifying array
-            /*  var a =["Aleena",21,"BSSE"]
-             document.write(a + "<br>");
+//             var a =["Aleena",21,"BSSE"]
+//              document.write(a + "<br>");
 
-             a[0]="Natasha";
-             document.write(a + "<br>");
-             delete a[1]; 
-             document.write(a + "<br>" )
+//              a[0]="Natasha";
+//              document.write(a + "<br>");
+//              delete a[1]; 
+//              document.write(a + "<br>" )
  
 
   //using methods
  var r= ["Maha", "Natasha", "Aleena","Tasha", "Romaisa","Alina"]
-document.write("<b> The Original Order: </b>" + r + "<br>");
- r.reverse();
- document.write( "<b> The Reverse Order: </b>" + r);
+// document.write("<b> The Original Order: </b>" + r + "<br>");
+//  r.reverse();
+//  document.write( "<b> The Reverse Order: </b>" + r);
    
- r.sort();
- document.write( "<h3> Sorted:  </h3>" + r + " <br> ");
+//  r.sort();
+//  document.write( "<h3> Sorted:  </h3>" + r + " <br> ");
 
-  document.write("<b> The Original Order: </b>" + r + "<br>");
-  r.pop(); 
-  document.write("<b> Pop: </b>" + r + " <br><br>")
+//   document.write("<b> The Original Order: </b>" + r + "<br>");
+//   r.pop(); 
+//   document.write("<b> Pop: </b>" + r + " <br><br>")
 
 
- document.write("<b> The Original Order: </b>" + r + "<br>");
- r.push("Romi"); // this function adds the value in the array
- document.write("<b> Push: </b>" + r + " <br><br>")
+//  document.write("<b> The Original Order: </b>" + r + "<br>");
+//  r.push("Romi"); // this function adds the value in the array
+//  document.write("<b> Push: </b>" + r + " <br><br>")
 
 
  document.write("<b> The Original Order: </b>" + r + "<br>");
@@ -151,201 +149,201 @@ document.write("<b> The Original Order: </b>" + r + "<br>");
 
 
 
- var a = ["BSSE","BBA","BMS"];
- var b = a.concat("BFT", "BSAI");
- document.write("<b> This is 1st concat method: </b>" + b + " <br>");
+//  var a = ["BSSE","BBA","BMS"];
+//  var b = a.concat("BFT", "BSAI");
+//  document.write("<b> This is 1st concat method: </b>" + b + " <br>");
              
- var a = ["BSSE","BBA","BMS"];
- var b = ["BFT", "BSAI"];
- var c = ["BSCS", "BESE"]
- var d = a.concat(b,c);
- document.write("<b> This is 2nd concat method: </b>" + d + " <br><br>");
+//  var a = ["BSSE","BBA","BMS"];
+//  var b = ["BFT", "BSAI"];
+//  var c = ["BSCS", "BESE"]
+//  var d = a.concat(b,c);
+//  document.write("<b> This is 2nd concat method: </b>" + d + " <br><br>");
 
 
- var e = d.join (" - ");
- document.write("<b> Join: </b>" + e + " <br><br>");
+//  var e = d.join (" - ");
+//  document.write("<b> Join: </b>" + e + " <br><br>");
 
- //slice() - to takeout one or more values from a existing array and create a entirely new array
- //slice(start,end)
-
-
- var e = ["BSSE","BBA","BMS","BFT", "BSAI", "BSCS", "BESE"];
- var f = e.slice(1, 6);
- document.write("<b> Slice: </b>" + f + " </br>");
-var g = e.slice(3);
- document.write( g + " <br>");
- var h = e.slice(-6); // neg value willl start the array in opposite direction
-document.write( h+ " <br>");
- var i = e.slice(-5,-1);
- document.write( i + " <br><br>");
-
-//splice() - we need to add thet new vakues ib between the array values
+//  //slice() - to takeout one or more values from a existing array and create a entirely new array
+//  //slice(start,end)
 
 
+//  var e = ["BSSE","BBA","BMS","BFT", "BSAI", "BSCS", "BESE"];
+//  var f = e.slice(1, 6);
+//  document.write("<b> Slice: </b>" + f + " </br>");
+// var g = e.slice(3);
+//  document.write( g + " <br>");
+//  var h = e.slice(-6); // neg value willl start the array in opposite direction
+// document.write( h+ " <br>");
+//  var i = e.slice(-5,-1);
+//  document.write( i + " <br><br>");
 
- var e = ["BSSE","BBA","BMS"];
- e.splice(1,0,"BFT","BSCS"); // if don't want to delete a value.
- document.write("<b> Splice: </b>" +  e + " <br>");
- e.splice(-2,1,"ADPSE"); // if i want to del a vale and add a new in its place
- document.write(e + " <br>");
- e.splice(2,2); // if ijust need to del a value and not add anything.
-// it means start from 2nd index and del 2 values.
-document.write(e + " <br><br>");
-
-// //isArray()
- // if you want to check via progra that a given variable is a variable similar to thoe in arrays
- document.write("<b> isArray: </b>" + "<br>");
- var data = ["Apple", "Banana", "Mango"];
- var s=20;
- if (Array.isArray(data)) {
-     document.write("This is an array: [ " + data + " ]" + "<br>");
- }
- else {
-     document.write("This is not an array: " + data + "<br>");
- }
-
- if (Array.isArray(s)) {
-     document.write("This is an array: " + s + "<br>");
- }
- else {
-     document.write("This is not an array: "+ s + "<br>");
- }
- document.write("<br>");
-
-
- //indexOf()
- let fruit = ["Apple", "Banana", "Mango", "Grapes", "Banana", "Peaches"];  
- document.write( "<h3> indexof(): </h3>" + fruit + "<br>");
- // creating an another variable and storing the array values in it.
- // finding the index number on which the value "Banana" is placed.
- var fru = fruit.indexOf("Banana");
- document.write( fru + "<br>");
- // finding the specific value starting from the desired index. 
- var frut = fruit.indexOf("Banana",2);
- document.write( frut + "<br>");
- // if we are finding a vlaue that is not present in that array
- //so it wil give us the value of -1
- var frui = fruit.indexOf("Pomogranate");
- document.write( "The value is not found: " + frui + "<br><br>");
-
-
- //lastIndexOf()
- var names = ["Maha", "Natasha", "Alina", "Romi" ,"Natasha", "Romaisa","Alina"];
- var result = names.lastIndexOf("Alina");
- document.write("<b> lastIndexOf(): </b>" + "<br>");
- document.write( "The name is at index: " + result + "<br>");
-
- var result = names.lastIndexOf("Alina", 5 );
- document.write( "The name is at index: " + result + "<br><br>");
+// //splice() - we need to add thet new vakues ib between the array values
 
 
 
-// // includes()
+//  var e = ["BSSE","BBA","BMS"];
+//  e.splice(1,0,"BFT","BSCS"); // if don't want to delete a value.
+//  document.write("<b> Splice: </b>" +  e + " <br>");
+//  e.splice(-2,1,"ADPSE"); // if i want to del a vale and add a new in its place
+//  document.write(e + " <br>");
+//  e.splice(2,2); // if ijust need to del a value and not add anything.
+// // it means start from 2nd index and del 2 values.
+// document.write(e + " <br><br>");
 
- document.write("<b> includes(): </b>" + "<br>");
- var rom = ["Maha", "Natasha", "Romi", "Alina", "Romaisa"];
- // Check if "Romi" is included
- if (rom.includes("Romi")) {
-     document.write("true. Yes, it is included.<br>");
- } else {
-     document.write("false. No, it is not included.<br>");
- }
+// // //isArray()
+//  // if you want to check via progra that a given variable is a variable similar to thoe in arrays
+//  document.write("<b> isArray: </b>" + "<br>");
+//  var data = ["Apple", "Banana", "Mango"];
+//  var s=20;
+//  if (Array.isArray(data)) {
+//      document.write("This is an array: [ " + data + " ]" + "<br>");
+//  }
+//  else {
+//      document.write("This is not an array: " + data + "<br>");
+//  }
 
- // Check if "Romana" is included
- if (rom.includes("Romana")) {
-     document.write("true. Yes, it is included.<br>");
- } else {
- }
-
- //some() - atlesat one or more than one need to be indlued
-
- document.write("<b> Some(): </b>" + "<br>");
-  var marks = [35, 42, 78, 90];
- document.write(marks + "<br>");
- var result = marks.some(checkPass);
- document.write(result + "<br><br>");
- function checkPass(mark) {
-     return mark >= 50;
- }
-
-//every() - all the values need to be true
-
-document.write("<b> every(): </b>" + "<br>");
-var marks = [65, 72, 88, 91];
-document.write(marks + "<br>");
-
-var result = marks.every(checkPass);
-document.write(result + "<br><br>");
-
-function checkPass(mark) {
-    return mark >= 50;
-}
-
-//find()
-
-document.write("<b> find(): </b>" + "<br>");
-var prices = [120, 250, 80, 300];
-document.write(prices + "<br>");
-
-var result = prices.find(checkPrice);
-document.write(result + "<br><br>");
-
-function checkPrice(price) {
-    return price > 200;
-}
+//  if (Array.isArray(s)) {
+//      document.write("This is an array: " + s + "<br>");
+//  }
+//  else {
+//      document.write("This is not an array: "+ s + "<br>");
+//  }
+//  document.write("<br>");
 
 
-//findIndex() - it prints the index number of the very first value that fulfils the condition.
+//  //indexOf()
+//  let fruit = ["Apple", "Banana", "Mango", "Grapes", "Banana", "Peaches"];  
+//  document.write( "<h3> indexof(): </h3>" + fruit + "<br>");
+//  // creating an another variable and storing the array values in it.
+//  // finding the index number on which the value "Banana" is placed.
+//  var fru = fruit.indexOf("Banana");
+//  document.write( fru + "<br>");
+//  // finding the specific value starting from the desired index. 
+//  var frut = fruit.indexOf("Banana",2);
+//  document.write( frut + "<br>");
+//  // if we are finding a vlaue that is not present in that array
+//  //so it wil give us the value of -1
+//  var frui = fruit.indexOf("Pomogranate");
+//  document.write( "The value is not found: " + frui + "<br><br>");
 
 
-document.write("<b> findIndex() </b>" + "<br>");
-var prices = [120, 25, 800, 300];
-document.write(prices + "<br>");
+//  //lastIndexOf()
+//  var names = ["Maha", "Natasha", "Alina", "Romi" ,"Natasha", "Romaisa","Alina"];
+//  var result = names.lastIndexOf("Alina");
+//  document.write("<b> lastIndexOf(): </b>" + "<br>");
+//  document.write( "The name is at index: " + result + "<br>");
 
-var result = prices.findIndex(checkPrice);
-document.write(result + "<br><br>");
-
-function checkPrice(price) {
-    return price > 200;
-}
-
-//filter() - it will create a new array based on the condition provided. 
-
-document.write("<h3> filter() </h3>");
-var prices = [120, 25, 800, 300];
-document.write(prices + "<br>");
-
-var result = prices.filter(checkPrice);
-document.write(result + "<br><br>");
-
-function checkPrice(price) {
-    return price > 200;
-}
-
-//toString()
-// Once an array is converted into a string value, no array function can be applied on it
+//  var result = names.lastIndexOf("Alina", 5 );
+//  document.write( "The name is at index: " + result + "<br><br>");
 
 
-document.write("<b> toString() </b>" + "<br>");
-var rom = ["Maha", "Natasha", "Romi", "Alina"];
-rom.toString();
-document.write(rom);
+
+// // // includes()
+
+//  document.write("<b> includes(): </b>" + "<br>");
+//  var rom = ["Maha", "Natasha", "Romi", "Alina", "Romaisa"];
+//  // Check if "Romi" is included
+//  if (rom.includes("Romi")) {
+//      document.write("true. Yes, it is included.<br>");
+//  } else {
+//      document.write("false. No, it is not included.<br>");
+//  }
+
+//  // Check if "Romana" is included
+//  if (rom.includes("Romana")) {
+//      document.write("true. Yes, it is included.<br>");
+//  } else {
+//  }
+
+//  //some() - atlesat one or more than one need to be indlued
+
+//  document.write("<b> Some(): </b>" + "<br>");
+//   var marks = [35, 42, 78, 90];
+//  document.write(marks + "<br>");
+//  var result = marks.some(checkPass);
+//  document.write(result + "<br><br>");
+//  function checkPass(mark) {
+//      return mark >= 50;
+//  }
+
+// //every() - all the values need to be true
+
+// document.write("<b> every(): </b>" + "<br>");
+// var marks = [65, 72, 88, 91];
+// document.write(marks + "<br>");
+
+// var result = marks.every(checkPass);
+// document.write(result + "<br><br>");
+
+// function checkPass(mark) {
+//     return mark >= 50;
+// }
+
+// //find()
+
+// document.write("<b> find(): </b>" + "<br>");
+// var prices = [120, 250, 80, 300];
+// document.write(prices + "<br>");
+
+// var result = prices.find(checkPrice);
+// document.write(result + "<br><br>");
+
+// function checkPrice(price) {
+//     return price > 200;
+// }
 
 
-document.write("<br><br>");
-//valueOf() 
+// //findIndex() - it prints the index number of the very first value that fulfils the condition.
 
-document.write("<b> valueOf() </b>" + "<br>");
-var rom = ["Maha", "Natasha", "Romi", "Alina"];
-document.write(rom.valueOf() + "<br>");
-document.write(rom  + "<br><br>");
 
-//fill(_)
+// document.write("<b> findIndex() </b>" + "<br>");
+// var prices = [120, 25, 800, 300];
+// document.write(prices + "<br>");
 
-document.write("<b> fill() </b>" + "<br>");
-var rom = ["Alina", "Natasha", "Romi"];
-rom.fill("Leena");
-document.write(rom  + "<br><br>");
+// var result = prices.findIndex(checkPrice);
+// document.write(result + "<br><br>");
+
+// function checkPrice(price) {
+//     return price > 200;
+// }
+
+// //filter() - it will create a new array based on the condition provided. 
+
+// document.write("<h3> filter() </h3>");
+// var prices = [120, 25, 800, 300];
+// document.write(prices + "<br>");
+
+// var result = prices.filter(checkPrice);
+// document.write(result + "<br><br>");
+
+// function checkPrice(price) {
+//     return price > 200;
+// }
+
+// //toString()
+// // Once an array is converted into a string value, no array function can be applied on it
+
+
+// document.write("<b> toString() </b>" + "<br>");
+// var rom = ["Maha", "Natasha", "Romi", "Alina"];
+// rom.toString();
+// document.write(rom);
+
+
+// document.write("<br><br>");
+// //valueOf() 
+
+// document.write("<b> valueOf() </b>" + "<br>");
+// var rom = ["Maha", "Natasha", "Romi", "Alina"];
+// document.write(rom.valueOf() + "<br>");
+// document.write(rom  + "<br><br>");
+
+// //fill(_)
+
+// document.write("<b> fill() </b>" + "<br>");
+// var rom = ["Alina", "Natasha", "Romi"];
+// rom.fill("Leena");
+// document.write(rom  + "<br><br>");
 
 //forEach() loop
 
@@ -356,14 +354,26 @@ names.forEach(function(values)//using the in built function
 {
     document.write(values + "<br>");
 });
+
 document.write("<br>")
+
 // can printt its index also
-names.forEach(loop);
-//created the function seprately
-function loop(values, index)
+names.forEach(loop); 
+function loop(values, index) //created the function seprately
 {
     document.write(index + " : " + values + "<br>");
 }
+
+const list1 = ["Apple", "Banana"];
+const list2 = list1;
+const list3 = ["Apple", "Banana"];
+
+console.log(list1 == list2);
+console.log(list1 == list3);
+
+console.log(list1 === list2);
+console.log(list1 === list3);
+
 
 
     </script>

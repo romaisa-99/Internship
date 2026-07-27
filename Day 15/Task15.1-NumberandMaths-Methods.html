@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title> Number Methods & Math Methods </title>
+    </head>
+    <body>
+        <script>
+
+document.write("<h3> Number Methods </h3>");
+
+//Number 
+var age = 20;
+var price = 99.99;
+document.write("This vintage vase is " + age + " years old.");
+document.write("<br>");
+document.write("It costs: $" + price);
+
+document.write("<br><br>");
+
+var price = 75;
+var quantity = 3;
+var total= price * quantity;
+document.write("I have purchased 3 pens each of RS 75." + "<br>");
+document.write("The total is: " + total);
+
+document.write("<br><br>");
+
+//Number()
+var a = "100";
+document.write("1. Number(): " + Number(a));
+
+document.write("<br><br>");
+
+//parseInt()
+var num = "45.89";
+document.write("2. parseInt(): " + parseInt(num));
+
+document.write("<br><br>");
+
+//parseFloat() 
+var num = "45.89";
+document.write("3. parseFloat(): " + parseFloat(num));
+
+
+document.write("<br><br>");
+
+//Number.isFinite()
+var maisa = 180;
+document.write("4. Number.isFinite(): " + Number.isFinite(maisa));
+
+document.write("<br><br>");
+
+//Number.isInteger()
+var s = 29.6;
+document.write("5. Number.isInteger(): " + Number.isInteger(s));
+
+document.write("<br><br>");
+
+/// toFixed()
+//Round off th value to the specific decimal place
+var num = 15.6789;
+ document.write("6. toFixed(): " + num.toFixed(2));
+
+document.write("<br><br>");
+
+//toPrecision()
+//It round off the value to 4 significant numbers.
+var num = 123.456;
+document.write("7. toPrecison(): " + num.toPrecision(4));
+
+
+document.write("<br><br>");
+
+
+document.write("<h3> Math Methods </h3>");
+
+var math = Math.ceil(8.24);
+document.write("1. ceil(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.floor(8.24);
+document.write("2. floor():" + math);
+
+document.write("<br><br>");
+
+var math = Math.round(0.62);
+document.write("3. round(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.trunc(8.0);
+document.write("4. trunc(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.max(20,45,60,12,35)
+document.write("5. max(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.min(-20,45,60,-12,35);
+document.write("6. min(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.sqrt(125);
+document.write("7. sqrt(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.cbrt(125)
+document.write("8. cbrt(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.pow(3,4);
+document.write("9. pow(): " + math);
+
+document.write("<br><br>");
+
+var math = (Math.random(1,9) * 10);
+document.write("10. random(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.abs(-25.698);
+document.write("9. pow(): " + math);
+
+document.write("<br><br>");
+
+var math = Math.PI
+document.write("9. pow(): " + math);
+
+document.write("<br><br>");
+
+document.write("<h3> Date Methods </h3>");
+
+document.write("<br><br>");
+
+var todays = new Date();
+todays.setDate(29); // set is used to predict the near future
+todays.setFullYear(2028);
+todays.setMonth(4);
+todays.setHours(4);
+
+document.write("<br><br>");
+
+
+var today = new Date();
+
+document.write(today.getDate() + " / " + (today.getMonth()+1)  + " / " + today.getFullYear());
+
+document.write("<br><br>");
+
+document.write(today + "<br>");
+document.write(today.toDateString() + "<br>");
+document.write(today.getDate() + "<br>");
+document.write(today.getMonth() + "<br>");
+document.write(today.getFullYear() + "<br>");
+document.write(today.getDay() + "<br>");
+document.write(today.getHours() + "<br>");
+document.write(today.getMinutes() + "<br>");
+document.write(today.getSeconds() + "<br>");
+document.write(today.getMilliseconds() + "<br>");
+
+
+
+
+        </script>
+    </body>
+</html>
