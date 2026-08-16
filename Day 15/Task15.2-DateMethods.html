@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Number Methods & Math Methods </title>
+    </head>
+    <body>
+        <script>
+
+var todays = new Date();
+todays.setDate(29);
+todays.setFullYear(2028);
+todays.setMonth(4);
+todays.setHours(4);
+
+var today = new Date();
+
+document.write(today.getDate() + " / " + (today.getMonth()+1) + " / " + today.getFullYear());
+
+document.write("<br><br>");
+
+document.write(today + "<br>");
+document.write(today.toDateString() + "<br>");
+document.write(today.getDate() + "<br>");
+document.write(today.getMonth() + "<br>");
+document.write(today.getFullYear() + "<br>");
+document.write(today.getDay() + "<br>");
+document.write(today.getHours() + "<br>");
+document.write(today.getMinutes() + "<br>");
+document.write(today.getSeconds() + "<br>");
+document.write(today.getMilliseconds() + "<br>");
+
+        </script>
+    </body>
+</html>

@@ -57,6 +57,7 @@ document.write("<br><br>");
 
 /// toFixed()
 //Round off th value to the specific decimal place
+
 var num = 15.6789;
  document.write("6. toFixed(): " + num.toFixed(2));
 
@@ -103,12 +104,12 @@ document.write("6. min(): " + math);
 
 document.write("<br><br>");
 
-var math = Math.sqrt(125);
+var math = Math.sqrt(81);
 document.write("7. sqrt(): " + math);
 
 document.write("<br><br>");
 
-var math = Math.cbrt(125)
+var math = Math.cbrt(64)
 document.write("8. cbrt(): " + math);
 
 document.write("<br><br>");
@@ -124,12 +125,12 @@ document.write("10. random(): " + math);
 document.write("<br><br>");
 
 var math = Math.abs(-25.698);
-document.write("9. pow(): " + math);
+document.write("11. abs(): " + math);
 
 document.write("<br><br>");
 
 var math = Math.PI
-document.write("9. pow(): " + math);
+document.write("12. Math.PI: " + math);
 
 document.write("<br><br>");
 
@@ -137,34 +138,52 @@ document.write("<h3> Date Methods </h3>");
 
 document.write("<br><br>");
 
-var todays = new Date();
-todays.setDate(29); // set is used to predict the near future
-todays.setFullYear(2028);
-todays.setMonth(4);
-todays.setHours(4);
+// var today = new Date();
+// document.write(today);
 
-document.write("<br><br>");
+// var today = new Date();
+// document.write(today.toDateString());
 
+// var today = new Date();
+// document.write(today.getMonth());
+// document.write("<br>");
+// document.write(today.getMonth() + 1);
 
-var today = new Date();
+// var today = new Date();
+// document.write(today.getFullYear());
 
-document.write(today.getDate() + " / " + (today.getMonth()+1)  + " / " + today.getFullYear());
+// var today = new Date();
+// document.write(today.getDay());
 
-document.write("<br><br>");
+// var today = new Date();
+// document.write(today.getHours());
 
-document.write(today + "<br>");
-document.write(today.toDateString() + "<br>");
-document.write(today.getDate() + "<br>");
-document.write(today.getMonth() + "<br>");
-document.write(today.getFullYear() + "<br>");
-document.write(today.getDay() + "<br>");
-document.write(today.getHours() + "<br>");
-document.write(today.getMinutes() + "<br>");
-document.write(today.getSeconds() + "<br>");
-document.write(today.getMilliseconds() + "<br>");
+// var today = new Date();
+// document.write(today.getMinutes());
 
+// var today = new Date();
+// document.write(today.getSeconds());
 
+// var today = new Date();
+// document.write(today.getMilliseconds());
 
+// var today = new Date();
+// today.setDate(29);
+// document.write(today);
+
+// var today = new Date();
+// today.setMonth(4);
+// document.write(today);
+
+// var today = new Date();
+// today.setFullYear(2028);
+// document.write(today);
+
+// var today = new Date();
+// document.write("Current Time: " + today);
+// today.setHours(today.getHours() - 4);
+// document.write("<br>");
+// document.write("4 Hours Before: " + today);
 
         </script>
     </body>
