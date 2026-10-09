@@ -25,9 +25,8 @@
     <main>
 
         <section id="home" class="card">
-
+            
             <h2 id="heading" class="abc"style="border: 1px solid black;"> Welcome to Flower World</h2>
-
             <p>
                 Flowers are one of nature's most beautiful creations.
                 They come in many colors, shapes, sizes, and fragrances.
@@ -185,27 +184,27 @@
         Discover some unique and beautiful flowers from around the world.
     </p>
 
-    <div class="flower-buttons" onclick="alert('You clicked a flower button!')">
+    <div class="flower-buttons">
 
-        <button class="flower-buttons" id="bleedingHeart">Bleeding Heart</button>
+        <button class="flower-buttons" id="bleedingHeart" onclick="bleedingHeartMessage()" >Bleeding Heart</button>
 
-        <button class="flower-button" id="birdOfParadise">Bird of Paradise</button>
+        <button class="flower-button" id="birdOfParadise" onmouseenter="birdMessage()">Bird of Paradise</button>
 
-        <button class="flower-buttons" id="passionFlower" >Passion Flower</button>
+        <button class="flower-buttons" id="passionFlower" onmouseleave="passionMessage()" > Passion Flower </button>
 
-        <button class="flower-buttons" id="protea">Protea</button>
+        <button class="flower-buttons" id="protea" ondblclick="proteaMessage()">Protea</button>
 
-        <button class="flower-buttons" id="moonflower">Moonflower</button>
+        <button class="flower-buttons" id="moonflower" onmousedown="moonFlowerMessage()">Moonflower</button>
 
-        <button class="flower-buttons" id="foxglove">Foxglove</button>
+        <button class="flower-buttons" id="foxglove" onmouseup="foxGlove()">Foxglove</button>
 
-        <button class="flower-buttons" id="snapdragon">Snapdragon</button>
+        <button class="flower-buttons" id="snapdragon" onmouseover="snapDragonMessage()">Snapdragon</button>
 
-        <button class="flower-buttons" id="hydrangea">Hydrangea</button>
+        <button class="flower-buttons" id="hydrangea" onmouseout="hydrangeaMessage()">Hydrangea</button>
 
-        <button class="flower-buttons" id="celosia">Celosia</button>
+        <button class="flower-buttons" id="celosia" oncontextmenu="celosiaMessage()">Celosia</button>
 
-        <button class="flower-buttons" id="plumeria">Plumeria</button>
+        <button class="flower-buttons" id="plumeria" onclick="plumeriaMessage()">Plumeria</button>
 
     </div>
 
