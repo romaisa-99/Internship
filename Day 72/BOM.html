@@ -1,0 +1,99 @@
+
+<html>
+<head>
+    <title>BOM Methods and Properties</title>
+
+    <style>
+        body {
+            width: 2000px;
+            height: 2000px;
+            background: lightblue;
+        }
+
+        .scroll-buttons {
+            position: fixed;
+            right: 20px;
+            padding: 10px;
+            background: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #vertical {
+            top: 40%;
+        }
+
+        #horizontal {
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+    <button onclick="moveByWindow()">Move By</button>
+    <button onclick="moveToWindow()">Move To</button>
+    <button onclick="resizeByWindow()">Resize By</button>
+    <button onclick="resizeToWindow()">Resize To</button>
+    <button onclick="getSize()">Get Window Size</button>
+    <button onclick="scrollToPosition()">Scroll To</button>
+    <button onclick="scrollByPosition()">Scroll By</button>
+
+    <button class="scroll-buttons" id="vertical" onclick="verticalScroll()">Vertical Scroll</button>
+
+    <button class="scroll-buttons" id="horizontal" onclick="horizontalScroll()">Horizontal Scroll</button>
+
+    <script>
+        var myWindow;
+
+        function openWindow() {
+            myWindow = window.open("https://www.google.com", " ", "width=500,height=400");
+        }
+
+        function closeWindow() {
+            myWindow.close();
+        }
+
+        function moveByWindow() {
+            myWindow.moveBy(100, 50);
+        }
+
+        function moveToWindow() {
+            myWindow.moveTo(200, 100);
+        }
+
+        function resizeByWindow() {
+            myWindow.resizeBy(100, 50);
+        }
+
+        function resizeToWindow() {
+            myWindow.resizeTo(500, 400);
+        }
+
+        function getSize() {
+            alert("Inner Width: " + window.innerWidth + "\nInner Height: " + window.innerHeight + "\nOuter Width: " + window.outerWidth + "\nOuter Height: " + window.outerHeight);
+        }
+
+        function scrollToPosition() {
+            window.scrollTo(0, 500);
+        }
+
+        function scrollByPosition() {
+            window.scrollBy(0, 50);
+        }
+
+        function verticalScroll() {
+            window.scrollBy(0, 50);
+        }
+
+        function horizontalScroll() {
+            window.scrollBy(50, 0);
+        }
+    </script>
+
+</body>
+</html>
+

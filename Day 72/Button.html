@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title> Buttons </title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            background: skyblue;
+            margin: 20px;
+        }
+    </style>
+    <head>
+        <body>
+            <div id="box"></div>
+            <script>
+                var element = document.querySelector("#box");
+                element.addEventListener("mousedown",function(e){
+                    console.clear();
+
+                    // var text = "You pressed button: " + e.button;
+                    var text = e.button;
+                    var color;
+
+                    switch(text){
+                        case 0:
+                            color = "green";
+                            break;
+                        case 1:
+                            color = "pink";
+                            break;
+                        case 2:
+                            color = "blue";
+                            break;
+                        default:
+                            color = "brown";
+                            break;                   
+                    }
+                    element.style.backgroundColor = color;
+                    // console.log(color);
+                });
+               
+
+      </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>offsetX & offsetY</title>
+
+    <style>
+        #box{
+            width: 400px;
+            height: 200px;
+            border: 1px solid #000;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h2> JavaScript screenX & screenY </h2>\
+    <div id="box"> </div>
+
+    <script>
+        
+        document.querySelector("#box").addEventListener("mousemove", function(e) {
+            console.clear();
+
+            var x = e.offsetX;
+            var y = e.offsetY;
+
+            console.log("offsetX: " + x);
+            console.log("offsetY: " + y);
+           
+        });
+   
+    </script>
+
+</body>
+</html>

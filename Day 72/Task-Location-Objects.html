@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <h1>JavaScript: Location Object</h1>
+
+    <button onclick="alert(location.hash)">Hash</button>
+    <button onclick="alert(location.host)">Host</button>
+    <button onclick="alert(location.hostname)">Hostname</button>
+    <button onclick="alert(location.href)">Href</button>
+    <button onclick="assignURL()">Assign</button>
+<button onclick="reloadPage()">Reload</button>
+<button onclick="replaceURL()">Replace</button>
+
+
+    <script>
+        document.write("<br><br>");
+        document.write("Origin: " + location.origin + "<br>");
+        document.write("Pathname: " + location.pathname + "<br>");
+        document.write("Port: " + location.port + "<br>");
+        document.write("Protocol: " + location.protocol + "<br>");
+        document.write("Search: " + location.search + "<br>");
+        
+        function assignURL() {
+    location.assign("https://www.google.com");
+}
+
+function reloadPage() {
+    location.reload();
+}
+
+function replaceURL() {
+    location.replace("https://www.google.com");
+}
+    </script>
+
+</body>
+</html>
+

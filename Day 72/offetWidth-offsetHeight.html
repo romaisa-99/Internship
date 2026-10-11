@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OffsetWidth & OffsetHeight</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #box {
+            background: orange;
+            width: 300px;
+            height: 300px;
+            border: 10px solid #000;
+            padding: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript offsetWidth & offsetHeight</h2>
+
+    <div id="box">
+        Vestibulum at imperdiet ante. Suspendisse lorem erat,
+        pellentesque id gravida et, varius id arcu. Sed lectus
+        lectus, convallis id tempor ac, laoreet ut elit.
+        Duis bibendum et felis ac posuere. Aenean non finibus ex,
+        in feugiat nibh.
+    </div>
+
+    <script>
+        var target = document.querySelector("#box");
+
+        var width = target.offsetWidth;
+        var height = target.offsetHeight;
+
+        console.log("Offset Width: " + width);
+        console.log("Offset Height: " + height);
+    </script>
+
+</body>
+</html>

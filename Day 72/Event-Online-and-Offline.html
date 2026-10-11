@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Online & Offline Event</title>
+    <style>
+        #box {
+            background: lightgoldenrodyellow;
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            border: 5px solid #4e4e4e;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">Checking Connection...</div>
+
+    <script>
+        var target = document.querySelector("#box");
+
+        window.addEventListener("online", function() {
+            target.innerHTML = "You Are Online.";
+            target.style.backgroundColor = "lightgreen";
+        });
+
+        window.addEventListener("offline", function() {
+            target.innerHTML = "You Are Offline.";
+            target.style.backgroundColor = "pink";
+        });
+    </script>
+
+</body>
+</html>

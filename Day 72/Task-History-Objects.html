@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript History Object</title>
+</head>
+<body>
+
+    <h1>JavaScript History Object</h1>
+
+    <button onclick="showLength()">Length</button>
+    <button onclick="goBack()">Back</button>
+    <button onclick="goForward()">Forward</button>
+    <button onclick="goPage()">Go</button>
+
+    <script>
+        function showLength() {
+            alert(history.length);
+        }
+
+        function goBack() {
+            history.back();
+        }
+
+        function goForward() {
+            history.forward();
+        }
+
+        function goPage() {
+            history.go(-2);
+        }
+    </script>
+
+</body>
+</html>
+
+

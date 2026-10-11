@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS clientX & clientY</title>
+
+    <style>
+        #box {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #000;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti inventore unde sint, corporis sequi dolorem,
+        reiciendis consequuntur harum veritatis velit. Fugit dolore
+        possimus modi, consequatur, illum esse atque hic aut,
+        provident. Explicabo placeat, nisi beatae nam deserunt vel
+        maxime tempora dolorum voluptates, modi autem iure libero,
+        sint amet nulla.
+    </p>
+
+    <script>
+        // var element = document.querySelector("body");
+        // element.addEventListener("mousemove", function(e) {
+        var target = document.querySelector("#box");
+        target.addEventListener("mousemove", function(e) {
+            console.clear();
+
+            var x = e.clientX;
+            var y = e.clientY;
+
+            console.log("ClientX: " + x);
+            console.log("ClientY: " + y);
+        });
+    </script>
+
+</body>
+</html>

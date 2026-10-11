@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <title> Key Properties></title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            background: skyblue;
+            margin: 20px;
+        }
+    </style>
+    <head>
+        <body>
+            <div id="box"></div>
+            <script>
+                var element = document.querySelector("#box");
+                element.addEventListener("click", function(e){
+                    console.clear();
+                //     var ctrl = e.ctrlKey;
+                //     if(ctrl){
+                //         console.log("You pressed the ctrl key.");
+                //     }
+                //     else {
+                //         console.log("You did not press the ctrl key.");
+                //     }
+                   
+                // });
+
+                //  element.addEventListener("click", function(e){
+                //     console.clear();
+                //     var shift = e.shiftKey;
+                //     if(shift){
+                //         console.log("You pressed the shift key.");
+                //     }
+                //     else {
+                //         console.log("You did not press the shift key.");
+                //     }
+                   
+                // });
+
+                // element.addEventListener("click", function(e){
+                //     console.clear();
+                //     var alt = e.altKey;
+                //     if(alt){
+                //         console.log("You pressed the alt key.");
+                //     }
+                //     else {
+                //         console.log("You did not press the alt key.");
+                //     }
+                // });
+
+                // element.addEventListener("click", function(e){
+                //     console.clear();
+                //     var meta = e.metaKey;
+                //     if(meta){
+                //         console.log("You pressed the meta key.");
+                //     }
+                //     else {
+                //         console.log("You did not press the meta key.");
+                //     }
+                   
+                // });
+
+                //using switch case:
+                var k;
+                switch(true){
+                    case e.metaKey:
+                        k="Meta key";
+                        break;
+                    case e.altKey:
+                        k="Alt key";
+                        break;
+                    case e.shiftKey:
+                        k="Shift key";  
+                        break;
+                    case e.ctrlKey:
+                        k="Ctrl key";
+                        break;
+                    default:
+                        k="No key pressed";
+                        break;
+                }
+                console.log(k);
+            });
+
+      </script>
+        </body>
+    </head>
+</html>
