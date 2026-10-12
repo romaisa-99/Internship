@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial;
+    background: #eee8ff;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    background: white;
+    width: 450px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+    color: purple;
+}
+
+.input-box {
+    display: flex;
+    gap: 8px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+button {
+    padding: 9px 12px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#wishList {
+   padding:1px;
+   text-align: justify;
+}
+
+li {
+    padding: 8px 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.wish-row {    
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.wish-text {    
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completed {    
+    text-decoration: line-through;
+    color: gray;
+}
+
+.edit {
+    background: #2878d0;
+}
+
+.delete {
+    background: crimson;
+}
+
+#message {
+    color: green;
+}
