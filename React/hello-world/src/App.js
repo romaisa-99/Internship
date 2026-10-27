@@ -1,25 +1,17 @@
+import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+function App (){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Natasha is my bestfriend
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div> 
+      <h1> Welcome to my Flower Shop</h1>
+      <p> Learn about different types of flowers.</p>
+      <button> Explore More </button>
     </div>
   );
-}
+  }
 
 export default App;
+
