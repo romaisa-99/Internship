@@ -1,7 +1,27 @@
 import React from 'react'
 
-function Greet(){
-    return<h2> Welcome to the world of REACT! </h2>
-}
+// //Creating new function
+// function Greet(){ // Now we will create a functional component
+//     return<h2> Welcome to the world of REACT! </h2>
+// }
+// //The greet compnent is not connect with rest of our application so we have to export Greet function from greet .js an import it into app.js then included inthe app component 
+// export default Greet 
 
-export default Greet 
+// Rewriting the functional components with the ES6 arrow function syntax
+// var Greet = () => <h1>Hello, Welcome to React</h1>;
+// export default Greet 
+
+//Now we are sending soe prop to the greet component and how do we retrive this values o=in the greet cmpobnemt here is what we do it:
+const Greet = (props) => {
+console.log(props)
+return(
+    <div>
+    <h1> 
+        Hello {props.name } 
+         </h1>
+    {props.children}
+    </div>
+)
+} 
+
+export default Greet
