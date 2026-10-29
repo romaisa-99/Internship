@@ -12,16 +12,41 @@ import React from 'react'
 // export default Greet 
 
 //Now we are sending soe prop to the greet component and how do we retrive this values o=in the greet cmpobnemt here is what we do it:
-const Greet = (props) => {
-console.log(props)
-return(
-    <div>
-    <h1> 
-        Hello {props.name } 
-         </h1>
-    {props.children}
-    </div>
-)
-} 
+// const Greet = (props) => {
+// console.log(props)
+// return(
+//     <div>
+//     <h1> 
+//         Hello {props.name } 
+//          </h1>
+//     {props.children}
+//     </div>
+// )
+// } 
 
+
+//Destructuring propes in the functional components
+//Way 1 - destructing in the parameter
+// const Greet = ({name}) => {
+//     return (
+//         <div>
+//             <h1>
+//                 Hello {name}
+//             </h1>
+//         </div>
+//     )
+// }
+
+//Way 2 detcuting it in the function body
+const Greet = props => { // rememeber propes is the parameter here
+    // in the body
+    const {name} = props 
+    return (
+        <div>
+            <h1>
+                Hello {name}
+            </h1>
+        </div>
+    )
+}
 export default Greet
