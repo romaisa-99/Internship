@@ -16,13 +16,22 @@ import StyleSheet from './components/StyleSheet';
 import InLine from './components/InLine';
 import './myStyle.css' //for css file only
 import styles from './mystyle.module.css' //for module.css
+import Form from './components/Form'
+import LifeCycleA from './components/LifeCycleA'
+import FragmentsDemo from './components/FragmentsDemo'
+import Table from './components/Table';
 
 class App extends Component{
   render(){
     return (
     <div id="rom">
-      <h1 className = 'error'> Error </h1>
-      <h1 className = {styles.success}> Success </h1>
+      <Table />
+      {/* <FragmentsDemo /> */}
+      {/* <LifeCycleA /> */}
+      {/* <Form /> */}
+      {/* For CSS Styling 
+       <h1 className = 'error'> Error </h1>
+      <h1 className = {styles.success}> Success </h1>*/}
       {/* <InLine /> */}
       {/* <StyleSheet primary={true}/> */}
       {/* <NameList /> */}
