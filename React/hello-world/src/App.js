@@ -27,15 +27,38 @@ import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCount from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo'
+import HoverCounterTwo from './components/HoverCounterTwo'
+import User from './components/User';
+import RenderCounter from './components/RenderCounter';
+
+
 
 class App extends Component{
   render(){
     return (
-    <div id="rom">
-      <ErrorBoundary > <Hero heroName='Batman'/> </ErrorBoundary>
+    <div id="Maisa">
+      <RenderCounter 
+      render={(count, incrementCount) => (
+        <ClickCounterTwo count={count} incrementCount={incrementCount} />
+      )}
+        />
+        <RenderCounter 
+      render={(count, incrementCount) => (
+        <HoverCounterTwo count={count} incrementCount={incrementCount} />
+      )}
+        />
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo /> */}
+      {/* <User name="Render Props Pattern - (II)" /> */}
+      {/* <HoverCount name='Romaisa'/>
+      <User render={(isLoggedIn) => isLoggedIn ? 'Render Props Pattern - (II)': 'Guest'} />
+      <ClickCounter /> */}
+      {/* <ErrorBoundary > <Hero heroName='Batman'/> </ErrorBoundary>
       <ErrorBoundary ><Hero heroName='Superman'/> </ErrorBoundary>
-      <ErrorBoundary ><Hero heroName='Joker'/> </ErrorBoundary>
-      
+      <ErrorBoundary ><Hero heroName='Joker'/> </ErrorBoundary> */}
       {/* <PortalDemo /> */}
       {/* <FRParentInput /> */}
       {/* <FocusInput /> */}

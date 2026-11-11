@@ -1,4 +1,4 @@
-#rom {
+#Maisa {
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 .App {
-  text-align:right;
+  text-align:center;
 }
 
 .App-logo {
