@@ -33,6 +33,9 @@ import ClickCounterTwo from './components/ClickCounterTwo'
 import HoverCounterTwo from './components/HoverCounterTwo'
 import User from './components/User';
 import RenderCounter from './components/RenderCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
+
 
 
 
@@ -40,18 +43,13 @@ class App extends Component{
   render(){
     return (
     <div id="Maisa">
-      <RenderCounter 
-      render={(count, incrementCount) => (
-        <ClickCounterTwo count={count} incrementCount={incrementCount} />
-      )}
-        />
-        <RenderCounter 
-      render={(count, incrementCount) => (
-        <HoverCounterTwo count={count} incrementCount={incrementCount} />
-      )}
-        />
-      {/* <ClickCounterTwo />
-      <HoverCounterTwo /> */}
+      <UserProvider value="Aleena"> 
+        <ComponentC />
+      </UserProvider> 
+      {/* <RenderCounter render={(count, incrementCount) => ( <ClickCounterTwo count={count} incrementCount={incrementCount} /> )} /> */}
+      {/* <RenderCounter render={(count, incrementCount) => ( <HoverCounterTwo count={count} incrementCount={incrementCount} />)} /> */}
+      {/* <ClickCounterTwo /> */}
+      {/* <HoverCounterTwo /> */}
       {/* <User name="Render Props Pattern - (II)" /> */}
       {/* <HoverCount name='Romaisa'/>
       <User render={(isLoggedIn) => isLoggedIn ? 'Render Props Pattern - (II)': 'Guest'} />
