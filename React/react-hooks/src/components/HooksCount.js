@@ -6,7 +6,7 @@ function HooksCount() {
     const [count, setCount] = useState(0)
   return (
     <div>
-      <button onClick={}> You clicked the button {} times </button>
+      <button onClick={() => setCount(count + 1)}> You clicked the button {count} times </button>
     </div>
   )
 }
