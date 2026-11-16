@@ -3,18 +3,21 @@ import {useState} from 'react'
 import {useEffect} from 'react'
 
 function HookCounterOne() {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState (0)
+    const [name, setName] = useState ('')
 
    /*useEffect is a function and in this hook, we pass in a parameter 
     and this paramerter is a function ehcih gets executed after every 
     render of the component so we will pass in the araow function which updates the document title*/
 
     useEffect (() => {
+      console.log('useEffect - Updating document title')
         document.title = `You clicked ${count} times`
-    })
+    }, [count])
     
   return (
     <div>
+      <input type="text" value={name} onChange={e=> setName(e.target.value)} />
       <button onClick={() => setCount(count + 1) }> Click {count} times</button>
     </div>
   )
