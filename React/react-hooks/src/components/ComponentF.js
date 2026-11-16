@@ -20,7 +20,7 @@ function ComponentF() {
                                 }}
                             </ChannelContext.Consumer>
                         )             
-                    }}
+                    }}                                                                    
             </UserContext.Consumer>
         </div>
     )
