@@ -12,8 +12,11 @@ import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
 import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
+import DataFetching from './components/DataFetching';
+import ComponentC from './components/ComponentC';
 
-
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
@@ -29,6 +32,15 @@ function App() {
      {/* <MouseContainer />  */}
      {/* <IntervalClassCounter/> */}
      {/* <IntervalHookCounter /> */}
+     {/* <DataFetching /> */}
+     <UserContext.Provider value={'Romaisa'}>
+      {/* Component C will be th child to this provider 
+      for whci we need to provide a conext value i.e username = romaisa*/}
+      <ChannelContext.Provider value={'CodeEvolution'}> 
+        <ComponentC/>
+      </ChannelContext.Provider>                             
+     </UserContext.Provider>
+     
 
 
     </div>
