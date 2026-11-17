@@ -1,7 +1,5 @@
-
-import React, {useContext} from 'react'
-import ComponentF from './ComponentF'
-import {UserContext, ChannelContext} from '../App'
+import React, { useContext } from 'react'
+import { UserContext, ChannelContext } from '../App'
 
 function ComponentE() {
 
@@ -9,11 +7,10 @@ function ComponentE() {
     const channel = useContext(ChannelContext)
 
     return (
-    <div>
-        {user} - {channel}
-    </div>
-     )
- }
-
+        <div>
+            {user} - {channel}
+        </div>
+    )
+}
 
 export default ComponentE
