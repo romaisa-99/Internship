@@ -33,14 +33,12 @@ function App() {
      {/* <IntervalClassCounter/> */}
      {/* <IntervalHookCounter /> */}
      {/* <DataFetching /> */}
-     <UserContext.Provider value={'Romaisa'}>
-      {/* Component C will be th child to this provider 
-      for whci we need to provide a conext value i.e username = romaisa*/}
-      <ChannelContext.Provider value={'CodeEvolution'}> 
+     {/* <UserContext.Provider value={'Romaisa'}> Component C will be th child to this provider for whci we need to provide a conext value i.e username = romaisa */}
+      /{/* <ChannelContext.Provider value={'CodeEvolution'}> 
         <ComponentC/>
       </ChannelContext.Provider>                             
      </UserContext.Provider>
-     
+      */}
 
 
     </div>
