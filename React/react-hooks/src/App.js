@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
-import FocusInput from './components/FocusInput';
+import UserForm from './components/UserForm';
+// import CounterOnee from './components/CounterOnee';
+// import CounterTwoo from './components/CounterTwoo';
+// import ClassTimer from './components/ClassTimer';
+// import HookTimer from './components/HookTimer';
+// import FocusInput from './components/FocusInput';
 // import DataFetchingTwo from './components/DataFetchingTwo';
 // import ClassCount from './components/ClassCount'
 // import HooksCount from './components/HooksCount';
@@ -52,7 +57,12 @@ function App() {
   return (
     // <CountContext.Provider value = {{countState: count,  countDispatch: dispatch}}> 
     <div className="App">
-      <FocusInput />
+      <UserForm />
+      {/* <CounterOnee /> */}
+      {/* <CounterTwoo /> */}
+      {/* <HookTimer /> */}
+      {/* <ClassTimer /> */}
+      {/* <FocusInput /> */}
       {/* <Counter /> */}
       {/* <ParentComponent /> */}
       {/* Count - {count} */}

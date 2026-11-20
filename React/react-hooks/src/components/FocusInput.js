@@ -6,6 +6,7 @@ function FocusInput() {
 
     useEffect(() => {
         //focus the input element.
+        //third step is to focus method on the input element within the arrpw function, we specify as inputRef.current.focus()
         inputRef.current.focus()
     }, [] )
   return (
@@ -16,4 +17,4 @@ function FocusInput() {
 }
 
 export default FocusInput
- //third step is to focus method on the input element within the arrpw function, we specify as inputRef.current.focus()
+ 
